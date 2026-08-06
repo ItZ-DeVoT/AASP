@@ -75,6 +75,29 @@
             pointer-events: none;
         }
 
+        /* AFTER LOADING */
+
+
+        .brand-banner.loaded::before {
+
+            animation: bgBlur 5s ease forwards;
+
+        }
+
+
+        .brand-banner.loaded h1 {
+
+            animation: txBlur 4s ease forwards;
+
+        }
+
+
+        nav.loaded {
+
+            animation: navShower 1s ease 3s forwards;
+
+        }
+
         /* CURSOR */
 
 
@@ -147,7 +170,7 @@
                 width .45s ease,
                 background .45s ease;
 
-            animation: navShower 1s ease 3s forwards;
+            /* animation: navShower 1s ease 3s forwards; */
         }
 
         @keyframes navShower {
@@ -1426,7 +1449,7 @@
             filter: blur(0px) brightness(1);
             transform: scale(1);
             z-index: 0;
-            animation: bgBlur 5s ease forwards;
+            /* animation: bgBlur 5s ease forwards; */
         }
 
         @keyframes bgBlur {
@@ -1464,7 +1487,7 @@
             color: transparent;
             -webkit-text-fill-color: transparent;
             filter: drop-shadow(0 20px 40px rgba(0, 0, 0, .4));
-            animation: txBlur 4s ease forwards;
+            /* animation: txBlur 4s ease forwards; */
             transition: transform .4s cubic-bezier(.22, 1, .36, 1);
             will-change: transform;
 
@@ -3255,16 +3278,25 @@
 
                 setTimeout(() => {
 
+
                     loader.classList.add("hide");
 
 
                     document.body.style.overflow = "auto";
 
+
+                    document.querySelector(".brand-banner")
+                        ?.classList.add("loaded");
+
+
+                    document.querySelector("nav")
+                        ?.classList.add("loaded");
+
+
                     ScrollTrigger.refresh();
 
 
                 }, 700);
-
 
             }
 
