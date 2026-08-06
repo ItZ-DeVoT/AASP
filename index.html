@@ -3293,7 +3293,12 @@
                         ?.classList.add("loaded");
 
 
-                    ScrollTrigger.refresh();
+
+                    if (typeof ScrollTrigger !== "undefined") {
+
+                        ScrollTrigger.refresh();
+
+                    }
 
 
                 }, 700);
