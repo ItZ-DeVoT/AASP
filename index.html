@@ -894,7 +894,7 @@
 
         .project h3 {
             font-family: 'Nazanin', sans-serif;
-            font-size: 45px;
+            font-size: 38px;
             margin-top: 5px;
             color: #000;
         }
@@ -904,6 +904,514 @@
         .project span {
             color: #2d2d2d;
             font-size: 20px;
+        }
+
+
+        /* =========================
+   VIDEO SHOWCASE
+========================= */
+
+        .video-showcase {
+
+            position: relative;
+
+            min-height: 100vh;
+
+            padding: 130px 8% 90px;
+
+            overflow: hidden;
+
+            color: #fff;
+
+            background:
+
+                radial-gradient(circle at 15% 20%,
+                    rgba(70, 145, 220, .28),
+                    transparent 32%),
+
+                radial-gradient(circle at 85% 80%,
+                    rgba(110, 150, 200, .22),
+                    transparent 32%),
+
+                radial-gradient(circle at 50% 50%,
+                    rgba(255, 255, 255, .35),
+                    transparent 45%),
+
+                linear-gradient(135deg,
+                    #eef4f9 0%,
+                    #dce7f2 45%,
+                    #c5d4e4 75%,
+                    #aebfd2 100%);
+
+        }
+
+
+        /* =========================
+   ARCHITECTURE GRID
+========================= */
+
+        .video-showcase::before {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background-image:
+
+                linear-gradient(rgba(0, 0, 0, .035) 1px,
+                    transparent 1px),
+
+                linear-gradient(90deg,
+                    rgba(0, 0, 0, .035) 1px,
+                    transparent 1px);
+
+            background-size: 80px 80px;
+
+            pointer-events: none;
+
+        }
+
+
+        /* =========================
+   HEADER
+========================= */
+
+        .video-showcase-header {
+
+            position: relative;
+
+            z-index: 2;
+
+            max-width: 800px;
+
+            margin-bottom: 70px;
+
+        }
+
+
+        .video-label {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+
+            font-family: Arial, sans-serif;
+
+            font-size: 12px;
+
+            letter-spacing: 5px;
+
+            opacity: .7;
+
+            margin-bottom: 25px;
+
+            color: #000;
+
+        }
+
+
+        .video-label span {
+
+            width: 55px;
+
+            height: 1px;
+
+            background: #000;
+
+        }
+
+
+        .video-showcase-header h2 {
+
+            margin: 0;
+
+            font-family: 'Lotus', sans-serif;
+
+            font-size: clamp(55px, 7vw, 110px);
+
+            line-height: 1.05;
+
+            font-weight: 400;
+
+            color: #031018;
+
+        }
+
+
+        .video-showcase-header h2 strong {
+
+            font-weight: 900;
+
+            background:
+
+                linear-gradient(90deg,
+                    #141738,
+                    #03264f);
+
+            -webkit-background-clip: text;
+
+            background-clip: text;
+
+            color: transparent;
+
+        }
+
+
+        .video-showcase-header p {
+
+            max-width: 520px;
+
+            margin-top: 30px;
+
+            font-family: 'Nazanin', sans-serif;
+
+            font-size: 22px;
+
+            line-height: 2;
+
+            color: rgba(0, 0, 0, .6);
+
+        }
+
+
+        /* =========================
+   VIDEO GRID
+========================= */
+
+        .video-showcase-grid {
+
+            position: relative;
+
+            z-index: 2;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, minmax(0, 1fr));
+
+            gap: 35px;
+
+            row-gap: 20px;
+
+            max-width: 1250px;
+
+            margin: 0 auto;
+
+            align-items: center;
+
+        }
+
+
+        /* =========================
+   VIDEO CARD
+========================= */
+
+        .showcase-video {
+            position: relative;
+
+            width: 100%;
+            height: 500px;
+
+            overflow: hidden;
+
+            border-radius: 12px;
+
+            cursor: pointer;
+
+            background: #090d13;
+
+            border: 1px solid rgba(255, 255, 255, .35);
+
+            box-shadow:
+                0 30px 80px rgba(0, 30, 70, .25),
+                inset 0 0 0 1px rgba(255, 255, 255, .08);
+        }
+
+
+        /* =========================
+   BLURRED BACKGROUND
+========================= */
+
+        .showcase-video::before {
+
+            content: "";
+
+            position: absolute;
+
+            inset: -35px;
+
+            background: var(--video-background);
+
+            background-size: cover;
+
+            background-position: center;
+
+            filter:
+                blur(28px) brightness(.45);
+
+            transform: scale(1.15);
+
+            z-index: 0;
+
+        }
+
+
+        /* =========================
+   VIDEO
+========================= */
+
+        .showcase-video video {
+
+            position: absolute;
+
+            z-index: 1;
+
+            top: 50%;
+
+            left: 50%;
+
+            width: 100%;
+
+            /* height: 100%; */
+
+            transform:
+                translate(-50%, -50%);
+
+            object-fit: contain;
+
+            transition:
+
+                transform 1s cubic-bezier(.2, .8, .2, 1);
+
+        }
+
+
+        /* =========================
+   OVERLAY
+========================= */
+
+        .video-overlay {
+
+            position: absolute;
+
+            inset: 0;
+
+            z-index: 2;
+
+            background:
+
+                linear-gradient(180deg,
+                    rgba(0, 0, 0, .02),
+                    rgba(0, 0, 0, .75));
+
+            pointer-events: none;
+
+            transition: .5s;
+
+        }
+
+
+        /* =========================
+   HOVER
+========================= */
+
+        .showcase-video:hover video {
+
+            transform:
+                translate(-50%, -50%) scale(1.035);
+
+        }
+
+
+        .showcase-video:hover .video-overlay {
+
+            background:
+
+                linear-gradient(180deg,
+                    rgba(0, 0, 0, .03),
+                    rgba(0, 0, 0, .88));
+
+        }
+
+
+        /* =========================
+   CONTENT
+========================= */
+
+        .video-content {
+
+            position: absolute;
+
+            z-index: 4;
+
+            left: 25px;
+
+            right: 25px;
+
+            bottom: 25px;
+
+            display: flex;
+
+            align-items: flex-end;
+
+            justify-content: space-between;
+
+        }
+
+
+        .video-number {
+
+            position: absolute;
+
+            left: 0;
+
+            bottom: 75px;
+
+            font-family: Arial, sans-serif;
+
+            font-size: 11px;
+
+            letter-spacing: 4px;
+
+            opacity: .65;
+
+        }
+
+
+        .video-content h3 {
+
+            margin: 0;
+
+            font-family: 'Nazanin', sans-serif;
+
+            font-size: 24px;
+
+            font-weight: 700;
+
+        }
+
+
+        .video-content p {
+
+            margin: 4px 0 0;
+
+            font-family: 'Nazanin', sans-serif;
+
+            font-size: 16px;
+
+            color: rgba(255, 255, 255, .65);
+
+        }
+
+
+        /* =========================
+   PLAY BUTTON
+========================= */
+
+        .play-button {
+
+            padding: 0 !important;
+
+            width: 58px;
+
+            height: 58px;
+
+            flex-shrink: 0;
+
+            border-radius: 50%;
+
+            border:
+                1px solid rgba(255, 255, 255, .5);
+
+            background:
+                rgba(255, 255, 255, .08);
+
+            backdrop-filter:
+                blur(14px);
+
+            -webkit-backdrop-filter:
+                blur(14px);
+
+            color: #fff;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            cursor: pointer;
+
+            transition:
+                .45s cubic-bezier(.2, .8, .2, 1);
+
+        }
+
+
+        .play-button span {
+
+            font-size: 16px;
+
+            margin-left: 3px;
+
+        }
+
+
+        .showcase-video:hover .play-button {
+
+            transform: scale(1.12);
+
+            background: #fff;
+
+            color: #000;
+
+        }
+
+
+        /* =========================
+   BOTTOM LINE
+========================= */
+
+        .video-bottom-line {
+
+            position: relative;
+
+            z-index: 2;
+
+            margin-top: 45px;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 20px;
+
+            font-family: Arial, sans-serif;
+
+            font-size: 10px;
+
+            letter-spacing: 4px;
+
+            opacity: .45;
+
+            color: #000;
+
+        }
+
+
+        .video-bottom-line div {
+
+            height: 1px;
+
+            flex: 1;
+
+            background:
+                rgba(0, 0, 0, .2);
+
         }
 
 
@@ -1596,8 +2104,254 @@
 
         }
 
+        #side-nav {
+            position: fixed;
+
+            right: 30px;
+            top: 50%;
+
+            transform: translate(120px, -50%);
+            opacity: 0;
+            visibility: hidden;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            gap: 18px;
+
+            padding: 0;
+            margin: 0;
+
+            list-style: none;
+
+            z-index: 999;
+
+            direction: ltr;
+
+            pointer-events: none;
+        }
+
+        #side-nav::before {
+            content: "";
+
+            position: absolute;
+
+            top: 0;
+            bottom: 0;
+
+            width: 1px;
+
+            background: rgba(0, 0, 0, .18);
+
+            z-index: -1;
+        }
+
+        #side-nav li {
+            width: 9px;
+            height: 9px;
+
+            border-radius: 50%;
+
+            background: rgba(0, 0, 0, .25);
+
+            border: 1px solid rgba(255, 255, 255, .8);
+
+            cursor: pointer;
+
+            transition:
+                .4s cubic-bezier(.22, 1, .36, 1);
+
+        }
+
+        #side-nav li.active-dot {
+            width: 15px;
+            height: 15px;
+            background: #00559b;
+            border-color: #ffffff;
+            box-shadow:
+                0 0 0 5px rgba(0, 85, 155, .12),
+                0 0 20px rgba(0, 85, 155, .45);
+            transform: scale(1.1);
+        }
+
+        #side-nav li:hover {
+            transform: scale(1.5);
+            background: #00559b;
+        }
+
+        /* =========================
+   VIDEO LIGHTBOX
+========================= */
+
+        .video-lightbox {
+
+            position: fixed;
+
+            inset: 0;
+
+            z-index: 99999;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 30px;
+
+            background: rgba(0, 0, 0, .72);
+
+            backdrop-filter: blur(25px);
+
+            -webkit-backdrop-filter: blur(25px);
+
+            opacity: 0;
+
+            visibility: hidden;
+
+            pointer-events: none;
+
+            transition:
+                opacity .45s ease,
+                visibility .45s ease;
+
+        }
+
+
+        /* OPEN */
+
+        .video-lightbox.active {
+
+            opacity: 1;
+
+            visibility: visible;
+
+            pointer-events: auto;
+
+        }
+
+
+        /* VIDEO CONTAINER */
+
+        .video-lightbox-content {
+
+            position: relative;
+
+            height: 90vh;
+
+            max-height: 900px;
+
+            aspect-ratio: 9 / 16;
+
+            border-radius: 18px;
+
+            overflow: hidden;
+
+            background: #000;
+
+            box-shadow:
+                0 40px 100px rgba(0, 0, 0, .65);
+
+            transform:
+                scale(.8) translateY(30px);
+
+            opacity: 0;
+
+            transition:
+                transform .55s cubic-bezier(.22, 1, .36, 1),
+                opacity .4s ease;
+
+        }
+
+
+        /* VIDEO OPEN ANIMATION */
+
+        .video-lightbox.active .video-lightbox-content {
+
+            transform:
+                scale(1) translateY(0);
+
+            opacity: 1;
+
+        }
+
+
+        /* ACTUAL VIDEO */
+
+        .video-lightbox-content video {
+
+            width: 100%;
+
+            height: 100%;
+
+            display: block;
+
+            object-fit: contain;
+
+            background: #000;
+
+        }
+
+
+        /* CLOSE BUTTON */
+
+        .video-lightbox-close {
+
+            position: absolute;
+
+            top: 25px;
+
+            right: 30px;
+
+            width: 52px;
+
+            height: 52px;
+
+            border-radius: 50%;
+
+            border: 1px solid rgba(255, 255, 255, .35);
+
+            background: rgba(255, 255, 255, .1);
+
+            backdrop-filter: blur(15px);
+
+            color: #fff;
+
+            font-size: 34px;
+
+            line-height: 1;
+
+            cursor: pointer;
+
+            z-index: 5;
+
+            transition: .3s;
+
+            padding: 0 !important;
+
+        }
+
+
+        .video-lightbox-close:hover {
+
+            background: #fff;
+
+            color: #000;
+
+            transform: rotate(90deg);
+
+        }
+
 
         /* MOBILE */
+
+        @media (max-width: 900px) {
+
+            #side-nav {
+                display: none;
+            }
+        }
 
         @media(max-width:900px) {
 
@@ -2432,7 +3186,7 @@
                 gap: 150px;
                 height: auto;
                 overflow: visible;
-                height: 175vh;
+                height: 1485px;
             }
 
 
@@ -2590,10 +3344,140 @@
 
             .project h3 {
 
-                font-size: 28px;
+                font-size: 23px;
 
             }
 
+
+        }
+
+        @media (max-width: 900px) {
+
+            .video-showcase {
+
+                min-height: auto;
+
+                padding: 100px 20px 60px;
+
+            }
+
+
+            .video-showcase-header {
+
+                margin-bottom: 45px;
+
+            }
+
+
+            .video-showcase-header h2 {
+
+                font-size: 52px;
+
+            }
+
+
+            .video-showcase-header p {
+
+                font-size: 18px;
+
+            }
+
+
+            .video-showcase-grid {
+
+                display: flex;
+
+                overflow-x: auto;
+
+                gap: 18px;
+
+                padding-bottom: 20px;
+
+                padding-top: 20px;
+
+                scroll-snap-type: x mandatory;
+
+                scrollbar-width: none;
+
+            }
+
+
+            .video-showcase-grid::-webkit-scrollbar {
+
+                display: none;
+
+            }
+
+
+            .showcase-video,
+            .main-video {
+
+                flex: 0 0 82vw;
+
+                height: 420px;
+
+                grid-row: auto;
+
+                scroll-snap-align: center;
+
+            }
+
+
+            .video-content h3 {
+
+                font-size: 27px;
+
+            }
+
+
+            .video-content {
+
+                inset: auto 20px 20px;
+
+            }
+
+
+            .video-bottom-line {
+
+                margin-top: 25px;
+
+            }
+
+        }
+
+        @media (max-width: 480px) {
+
+            .video-showcase {
+
+                padding: 80px 15px 45px;
+
+            }
+
+
+            .video-showcase-header h2 {
+
+                font-size: 43px;
+
+            }
+
+
+            .showcase-video,
+            .main-video {
+
+                flex-basis: 88vw;
+
+                height: 380px;
+
+            }
+
+
+            .play-button {
+
+                width: 52px;
+
+                height: 52px;
+
+            }
 
         }
 
@@ -2825,6 +3709,34 @@
 
 <body>
 
+    <!-- VIDEO LIGHTBOX -->
+
+    <div class="video-lightbox">
+
+        <button class="video-lightbox-close">
+            ×
+        </button>
+
+        <div class="video-lightbox-content">
+
+            <video controls playsinline></video>
+
+        </div>
+
+    </div>
+
+    <ul id="side-nav">
+        <li data-go-to="0"></li>
+        <li data-go-to="1"></li>
+        <li data-go-to="2"></li>
+        <li data-go-to="3"></li>
+        <li data-go-to="4"></li>
+        <li data-go-to="5"></li>
+        <li data-go-to="6"></li>
+        <li data-go-to="7"></li>
+        <li data-go-to="8"></li>
+    </ul>
+
 
     <!-- CUSTOM CURSOR -->
 
@@ -2883,7 +3795,7 @@
 
     <!-- HERO -->
 
-    <section class="hero">
+    <section class="hero" data-section="0">
 
         <div class="hero-media">
             <video class="hero-video" autoplay muted loop playsinline>
@@ -2934,7 +3846,7 @@
     <!-- INTRO -->
 
 
-    <section class="intro light-nav">
+    <section class="intro light-nav" data-section="1">
 
         <div class="intro-content">
             <div style="display: flex;">
@@ -2965,7 +3877,7 @@
 
     <!-- what we do selector -->
 
-    <section class="what-we-do">
+    <section class="what-we-do" data-section="2">
 
         <h2
             style="padding-top: 0; position: absolute; margin-top: -140px; right: 130px; font-family: 'Nazanin', sans-serif; font-size: 32px;">
@@ -3035,7 +3947,7 @@
 
 
 
-    <section class="process">
+    <section class="process" data-section="3">
 
         <div class="building-compare">
             <img src="building-finished.webp" class="finished">
@@ -3064,7 +3976,7 @@
     </section>
 
 
-    <section class="special-projects light-nav">
+    <section class="special-projects light-nav" data-section="4">
 
         <div class="special-project">
             <img src="building-finished.webp" alt="">
@@ -3122,15 +4034,15 @@
     <!-- HORIZONTAL PROJECT SECTION -->
 
 
-    <section class="projects light-nav">
+    <section class="projects light-nav" data-section="5">
         <div class="projects-track">
             <div class="project">
                 <div class="image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200">
+                    <img src="./projects (4).webp">
                 </div>
 
                 <h3>
-                    نام پروژه
+                    پروژه مسکونی مهرشهر کرج
                 </h3>
 
                 <span>
@@ -3140,11 +4052,11 @@
 
             <div class="project">
                 <div class="image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200">
+                    <img src="./projects (1).webp">
                 </div>
 
                 <h3>
-                    نام پروژه
+                    مقاوم سازی و اتمام پروژه دربند
                 </h3>
 
                 <span>
@@ -3154,15 +4066,29 @@
 
             <div class="project">
                 <div class="image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200">
+                    <img src="./projects (2).webp">
                 </div>
 
                 <h3>
-                    نام پروژه
+                    اجرای سقف کناف پروژه بیمارستان امیر کبیر
                 </h3>
 
                 <span>
                     03
+                </span>
+            </div>
+
+            <div class="project">
+                <div class="image-wrapper">
+                    <img src="./projects (3).webp">
+                </div>
+
+                <h3>
+                    کاشت میلگرد پروژه شهر جدید مهستان
+                </h3>
+
+                <span>
+                    04
                 </span>
             </div>
 
@@ -3173,11 +4099,216 @@
 
     </section>
 
+    <!-- VIDEO SHOWCASE -->
+
+    <section class="video-showcase light-nav" data-section="6">
+
+        <div class="video-showcase-header">
+
+            <div class="video-label">
+                <span></span>
+                SELECTED WORKS
+            </div>
+
+            <h2>
+                پروژه‌ها را<br>
+                <strong>از نزدیک ببینید</strong>
+            </h2>
+
+            <!-- <p>
+                بخشی از پروژه‌های معماری و اجرایی AASP را
+                در قاب تصویر مشاهده کنید.
+            </p> -->
+
+        </div>
+
+
+        <div class="video-showcase-grid">
+
+            <!-- SMALL VIDEO -->
+
+            <div class="showcase-video main-video">
+
+                <video muted loop playsinline preload="metadata">
+                    <source src="./video(2).webm" type="video/webm">
+                </video>
+
+                <div class="video-overlay"></div>
+
+                <div class="video-content">
+
+                    <span class="video-number">01</span>
+
+                    <div>
+                        <h3 class="showcase-video-h3">پروژه مسکونی مهرشهر کرج</h3>
+                        <p>ارماتوربندی و نهایی سازی پروژه</p>
+                    </div>
+
+                    <button class="play-button">
+                        <span>▶</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- SMALL VIDEO -->
+
+            <div class="showcase-video">
+
+                <video muted loop playsinline preload="metadata">
+                    <source src="./video(1).webm" type="video/webm">
+                </video>
+
+                <div class="video-overlay"></div>
+
+                <div class="video-content">
+
+                    <span class="video-number">02</span>
+
+                    <div>
+                        <h3 class="showcase-video-h3">پروژه بیمارستان بین المللی تبریز</h3>
+                        <p>بخش دیالیز و آموزشی</p>
+                    </div>
+
+                    <button class="play-button">
+                        <span>▶</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- SMALL VIDEO -->
+
+            <div class="showcase-video">
+
+                <video muted loop playsinline preload="metadata">
+                    <source src="./video(3).webm" type="video/webm">
+                </video>
+
+                <div class="video-overlay"></div>
+
+                <div class="video-content">
+
+                    <span class="video-number">03</span>
+
+                    <div>
+                        <h3 class="showcase-video-h3">پروژه بیمارستان امیرکبیر</h3>
+                        <p>اجرای اسکلت فلزی</p>
+                    </div>
+
+                    <button class="play-button">
+                        <span>▶</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- SMALL VIDEO -->
+
+            <div class="showcase-video">
+
+                <video muted loop playsinline preload="metadata">
+                    <source src="./video(4).webm" type="video/webm">
+                </video>
+
+                <div class="video-overlay"></div>
+
+                <div class="video-content">
+
+                    <span class="video-number">04</span>
+
+                    <div>
+                        <h3 class="showcase-video-h3">پروژه دربند</h3>
+                        <p>مقاوم سازی و اتمام پروژه</p>
+                    </div>
+
+                    <button class="play-button">
+                        <span>▶</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- SMALL VIDEO -->
+
+            <div class="showcase-video">
+
+                <video muted loop playsinline preload="metadata">
+                    <source src="./video(5).webm" type="video/webm">
+                </video>
+
+                <div class="video-overlay"></div>
+
+                <div class="video-content">
+
+                    <span class="video-number">05</span>
+
+                    <div>
+                        <h3 class="showcase-video-h3">پروژه بیمارستان امیرکبیر</h3>
+                        <p>اجرای سقف کناف</p>
+                    </div>
+
+                    <button class="play-button">
+                        <span>▶</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- SMALL VIDEO -->
+
+            <div class="showcase-video">
+
+                <video muted loop playsinline preload="metadata">
+                    <source src="./video(6).webm" type="video/webm">
+                </video>
+
+                <div class="video-overlay"></div>
+
+                <div class="video-content">
+
+                    <span class="video-number">06</span>
+
+                    <div>
+                        <h3 class="showcase-video-h3">پروژه شهر جدید مهستان</h3>
+                        <p>کاشت میلگرد</p>
+                    </div>
+
+                    <button class="play-button">
+                        <span>▶</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="video-bottom-line">
+
+            <span>ARCHITECTURE</span>
+
+            <div></div>
+
+            <span>AASP / 2026</span>
+
+        </div>
+
+    </section>
+
 
     <!-- SERVICES -->
 
 
-    <section class="services">
+    <section class="services" data-section="7">
 
         <!-- NUMBERS -->
 
@@ -3236,7 +4367,7 @@
     <!-- FINAL -->
 
 
-    <section class="contact">
+    <section class="contact" data-section="8">
 
         <h2 class="split" style="font-family: 'Badr', sans-serif;">
 
@@ -3287,7 +4418,7 @@
 
                     document.querySelector(".brand-banner")
                         ?.classList.add("loaded");
-                        console.log("LOADED CLASS ADDED");
+                    console.log("LOADED CLASS ADDED");
 
 
                     document.querySelector("nav")
@@ -4505,6 +5636,195 @@
 
 
         });
+    </script>
+
+    <script>
+        gsap.to("#side-nav", {
+            x: 0,
+            opacity: 1,
+            visibility: "visible",
+            duration: 1.2,
+            ease: "power4.out",
+            pointerEvents: "auto",
+            scrollTrigger: {
+                trigger: ".hero",
+                start: "top center",
+                toggleActions: "play none none reverse"
+            }
+        });
+
+        const sections = document.querySelectorAll("[data-section]");
+        const dots = document.querySelectorAll("#side-nav li");
+
+        dots.forEach(dot => {
+
+            dot.addEventListener("click", () => {
+
+                const index = Number(dot.dataset.goTo);
+
+                const target = document.querySelector(
+                    `[data-section="${index}"]`
+                );
+
+                if (!target) return;
+
+                target.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+
+            });
+
+        });
+
+        function updateSideNav() {
+
+            const middle = window.innerHeight / 2;
+
+            let activeIndex = 0;
+
+            sections.forEach(section => {
+
+                const rect = section.getBoundingClientRect();
+
+                if (
+                    rect.top <= middle &&
+                    rect.bottom >= middle
+                ) {
+                    activeIndex = Number(section.dataset.section);
+                }
+
+            });
+
+            dots.forEach(dot => {
+                dot.classList.remove("active-dot");
+            });
+
+            if (dots[activeIndex]) {
+                dots[activeIndex].classList.add("active-dot");
+            }
+
+        }
+
+        window.addEventListener("scroll", updateSideNav);
+        window.addEventListener("resize", updateSideNav);
+
+        updateSideNav();
+    </script>
+
+    <script>
+
+        document.querySelectorAll(".showcase-video").forEach(card => {
+
+            const video = card.querySelector("video");
+
+            card.addEventListener("mouseenter", () => {
+
+                video.play();
+
+            });
+
+            card.addEventListener("mouseleave", () => {
+
+                video.pause();
+
+            });
+
+        });
+
+    </script>
+
+    <script>
+
+        const videoLightbox =
+            document.querySelector(".video-lightbox");
+
+        const lightboxVideo =
+            videoLightbox.querySelector("video");
+
+        const closeButton =
+            document.querySelector(".video-lightbox-close");
+
+
+        document.querySelectorAll(".showcase-video").forEach(card => {
+
+            card.addEventListener("click", function () {
+
+                const originalVideo =
+                    this.querySelector("video");
+
+                const source =
+                    originalVideo.querySelector("source");
+
+                if (!source) return;
+
+
+                lightboxVideo.src =
+                    source.src;
+
+
+                videoLightbox.classList.add("active");
+
+                lightboxVideo.currentTime =
+                    originalVideo.currentTime;
+
+                lightboxVideo.play()
+                    .catch(() => { });
+
+            });
+
+        });
+
+
+        /* CLOSE */
+
+        function closeVideoLightbox() {
+
+            lightboxVideo.pause();
+
+            lightboxVideo.removeAttribute("src");
+
+            lightboxVideo.load();
+
+            videoLightbox.classList.remove("active");
+
+        }
+
+
+        closeButton.addEventListener(
+            "click",
+            closeVideoLightbox
+        );
+
+
+        videoLightbox.addEventListener("click", function (e) {
+
+            if (
+                e.target === videoLightbox
+            ) {
+
+                closeVideoLightbox();
+
+            }
+
+        });
+
+
+        /* ESC */
+
+        document.addEventListener("keydown", function (e) {
+
+            if (
+                e.key === "Escape" &&
+                videoLightbox.classList.contains("active")
+            ) {
+
+                closeVideoLightbox();
+
+            }
+
+        });
+
     </script>
 
 
