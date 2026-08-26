@@ -351,7 +351,7 @@
 
 
         .hero {
-            height: 100vh;
+            height: 130vh;
             position: relative;
             display: flex;
             justify-content: center;
@@ -419,7 +419,7 @@
             flex-wrap: wrap;
             gap: 3px;
             font-family: 'Nazanin', sans-serif;
-            margin-top: 40px;
+            margin: 60px auto 0;
         }
 
         .hero-tags span {
@@ -429,9 +429,11 @@
             /* border: 1px solid rgba(255, 255, 255, .12); */
             backdrop-filter: blur(8px);
             color: #ffffff;
-            font-size: 16px;
+            font-size: 24px;
             font-weight: 500;
+            max-width: 1000px;
             transition: .35s;
+            border-radius: 18px;
         }
 
         .hero-tags span:hover {
@@ -441,7 +443,7 @@
 
         .hero h1 {
             font-family: 'Sandbad_Bold', sans-serif;
-            font-size: 130px;
+            font-size: 110px;
             line-height: 1.0;
             font-weight: 900;
         }
@@ -480,7 +482,7 @@
 
         .intro {
 
-            min-height: 100vh;
+            min-height: 140vh;
 
             padding: 75px 10% 30px 10%;
 
@@ -571,9 +573,11 @@
 
         .intro p {
 
+            font-weight: 600;
+
             margin-top: 50px;
 
-            font-size: 26px;
+            font-size: 24px;
 
             line-height: 2;
 
@@ -622,6 +626,8 @@
 
             box-shadow:
                 0 20px 50px rgba(0, 85, 155, 0.12);
+
+            cursor: default;
 
         }
 
@@ -749,7 +755,7 @@
         }
 
         .service-text h3 {
-            font-size: 24px;
+            font-size: 18px;
             margin: 0;
             color: #fff;
             font-weight: 800;
@@ -788,7 +794,7 @@
 
             position: relative;
 
-            padding-right: 32px;
+            padding-right: 22px;
 
             margin-bottom: 16px;
 
@@ -1898,6 +1904,417 @@
                 contactGradient 15s ease infinite;
         }
 
+        /* =========================
+   EXPERTISE FOR
+========================= */
+
+        .expertise-for {
+
+            position: relative;
+
+            padding: 150px 8%;
+
+            overflow: hidden;
+
+            background:
+
+                radial-gradient(circle at 85% 15%,
+                    rgba(47, 140, 255, .12),
+                    transparent 30%),
+
+                radial-gradient(circle at 10% 90%,
+                    rgba(0, 85, 155, .08),
+                    transparent 30%),
+
+                linear-gradient(135deg,
+                    #ffffff 0%,
+                    #f5f8fb 55%,
+                    #e9f0f7 100%);
+
+            color: #07182b;
+
+        }
+
+
+        /* GRID PATTERN */
+
+        .expertise-for::before {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background-image:
+
+                linear-gradient(rgba(0, 45, 90, .035) 1px,
+                    transparent 1px),
+
+                linear-gradient(90deg,
+                    rgba(0, 45, 90, .035) 1px,
+                    transparent 1px);
+
+            background-size: 80px 80px;
+
+            pointer-events: none;
+
+        }
+
+
+        /* HEADER */
+
+        .expertise-for-header {
+
+            position: relative;
+
+            z-index: 2;
+
+            max-width: 750px;
+
+            margin-bottom: 80px;
+
+        }
+
+
+        .expertise-label {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+
+            font-family: Arial, sans-serif;
+
+            font-size: 12px;
+
+            letter-spacing: 5px;
+
+            color: #31516f;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        .expertise-label span {
+
+            width: 55px;
+
+            height: 1px;
+
+            background: #00559b;
+
+        }
+
+
+        .expertise-for-header h2 {
+
+            margin: 0;
+
+            font-family: 'Lotus', sans-serif;
+
+            font-size: clamp(60px, 7vw, 105px);
+
+            line-height: 1.1;
+
+            font-weight: 400;
+
+            color: #07182b;
+
+        }
+
+
+        .expertise-for-header h2 strong {
+
+            font-weight: 900;
+
+            background:
+                linear-gradient(90deg,
+                    #00559b,
+                    #122d50);
+
+            -webkit-background-clip: text;
+
+            background-clip: text;
+
+            color: transparent;
+
+        }
+
+
+        .expertise-for-header p {
+
+            max-width: 560px;
+
+            margin-top: 30px;
+
+            font-family: 'Nazanin', sans-serif;
+
+            font-size: 23px;
+
+            line-height: 2;
+
+            color: rgba(7, 24, 43, .58);
+
+        }
+
+
+        /* =========================
+   CARDS
+========================= */
+
+        .expertise-for-grid {
+
+            position: relative;
+
+            z-index: 2;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 22px;
+
+        }
+
+
+        /* CARD */
+
+        .expertise-card {
+
+            position: relative;
+
+            min-height: 360px;
+
+            padding: 30px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: space-between;
+
+            overflow: hidden;
+
+            background:
+                rgba(255, 255, 255, .72);
+
+            border: 1px solid rgba(0, 50, 100, .10);
+
+            border-radius: 24px;
+
+            box-shadow:
+                0 25px 60px rgba(0, 45, 90, .08);
+
+            backdrop-filter: blur(12px);
+
+            -webkit-backdrop-filter: blur(12px);
+
+            transition:
+                .5s cubic-bezier(.22, 1, .36, 1);
+
+        }
+
+
+        .expertise-card::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 250px;
+
+            height: 250px;
+
+            right: -100px;
+
+            top: -100px;
+
+            border-radius: 50%;
+
+            background:
+                rgba(47, 140, 255, .08);
+
+            transition: .6s;
+
+        }
+
+
+        .expertise-card:hover {
+
+            transform: translateY(-8px);
+
+            border-color:
+                rgba(0, 85, 155, .35);
+
+            box-shadow:
+                0 35px 80px rgba(0, 55, 110, .16);
+
+        }
+
+
+        .expertise-card:hover::before {
+
+            transform: scale(1.5);
+
+        }
+
+
+        /* TOP */
+
+        .expertise-card-top {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+        }
+
+
+        .expertise-number {
+
+            font-family: Arial, sans-serif;
+
+            font-size: 13px;
+
+            letter-spacing: 4px;
+
+            color: #6d8194;
+
+        }
+
+
+        /* ICON */
+
+        .expertise-icon {
+
+            width: 58px;
+
+            height: 58px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background:
+                rgba(0, 85, 155, .07);
+
+            border:
+                1px solid rgba(0, 85, 155, .14);
+
+            color: #00559b;
+
+            font-size: 21px;
+
+            transition: .45s;
+
+        }
+
+
+        .expertise-card:hover .expertise-icon {
+
+            background: #00559b;
+
+            color: #fff;
+
+            transform: rotate(-8deg) scale(1.08);
+
+        }
+
+
+        /* CONTENT */
+
+        .expertise-card-content {
+
+            position: relative;
+
+            z-index: 2;
+
+        }
+
+
+        .expertise-card-content h3 {
+
+            margin: 0 0 15px;
+
+            font-family: 'Lotus', sans-serif;
+
+            font-size: 38px;
+
+            color: #07182b;
+
+        }
+
+
+        .expertise-card-content p {
+
+            max-width: 580px;
+
+            margin: 0;
+
+            font-family: 'Nazanin', sans-serif;
+
+            font-size: 21px;
+
+            line-height: 2;
+
+            color: rgba(7, 24, 43, .58);
+
+        }
+
+
+        /* ARROW */
+
+        .expertise-arrow {
+
+            position: absolute;
+
+            left: 30px;
+
+            bottom: 30px;
+
+            width: 42px;
+
+            height: 42px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: #07182b;
+
+            color: #fff;
+
+            font-size: 15px;
+
+            opacity: .8;
+
+            transition: .45s;
+
+        }
+
+
+        .expertise-card:hover .expertise-arrow {
+
+            background: #00559b;
+
+            transform: translateX(-7px);
+
+        }
+
         @keyframes contactGradient {
 
 
@@ -2340,6 +2757,1230 @@
             color: #000;
 
             transform: rotate(90deg);
+
+        }
+
+        /* =========================
+   INSPECTION PROCESS
+========================= */
+
+        .inspection-process {
+
+            position: relative;
+
+            padding: 150px 8% 180px;
+
+            background:
+
+                radial-gradient(circle at 10% 15%,
+                    rgba(62, 135, 210, .16),
+                    transparent 30%),
+
+                radial-gradient(circle at 90% 80%,
+                    rgba(30, 75, 130, .12),
+                    transparent 35%),
+
+                linear-gradient(135deg,
+                    #ffffff 0%,
+                    #f5f8fb 55%,
+                    #e9f0f7 100%);
+
+            overflow: hidden;
+
+        }
+
+
+        /* GRID */
+
+        .inspection-process::before {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background-image:
+
+                linear-gradient(rgba(0, 45, 90, .035) 1px,
+                    transparent 1px),
+
+                linear-gradient(90deg,
+                    rgba(0, 45, 90, .035) 1px,
+                    transparent 1px);
+
+            background-size: 80px 80px;
+
+            pointer-events: none;
+
+        }
+
+
+        /* HEADER */
+
+        .inspection-process-header {
+
+            position: relative;
+
+            z-index: 2;
+
+            max-width: 850px;
+
+            margin-bottom: 110px;
+
+        }
+
+
+        .inspection-process-header .process-label {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+
+            margin-bottom: 25px;
+
+            font-family: Arial, sans-serif;
+
+            font-size: 12px;
+
+            letter-spacing: 5px;
+
+            color: #173b60;
+
+            opacity: .7;
+
+        }
+
+
+        .inspection-process-header .process-label::before {
+
+            content: "";
+
+            width: 60px;
+
+            height: 1px;
+
+            background: #173b60;
+
+        }
+
+
+        .inspection-process-header h2 {
+
+            margin: 0;
+
+            font-family: 'Lotus', sans-serif;
+
+            font-size: clamp(55px, 7vw, 105px);
+
+            font-weight: 400;
+
+            line-height: 1;
+
+            color: #071a2d;
+
+        }
+
+
+        .inspection-process-header h2 strong {
+
+            font-weight: 900;
+
+            background:
+
+                linear-gradient(90deg,
+                    #062a50,
+                    #1476bd);
+
+            -webkit-background-clip: text;
+
+            background-clip: text;
+
+            color: transparent;
+
+        }
+
+
+        .inspection-process-header p {
+
+            max-width: 600px;
+
+            margin-top: 30px;
+
+            font-family: 'Nazanin', sans-serif;
+
+            font-size: 22px;
+
+            line-height: 2;
+
+            color: rgba(5, 25, 45, .6);
+
+        }
+
+
+        /* =========================
+   TIMELINE
+========================= */
+
+        .process-timeline {
+
+            position: relative;
+
+            max-width: 1150px;
+
+            margin: 0 auto;
+
+        }
+
+
+        /* MAIN LINE */
+
+        .process-timeline::before {
+
+            content: "";
+
+            position: absolute;
+
+            top: 0;
+
+            bottom: 0;
+
+            right: 22px;
+
+            width: 1px;
+
+            background:
+
+                linear-gradient(to bottom,
+                    transparent,
+                    rgba(0, 75, 135, .3) 5%,
+                    rgba(0, 75, 135, .3) 95%,
+                    transparent);
+
+        }
+
+
+        /* STEP */
+
+        .process-step {
+
+            position: relative;
+
+            display: grid;
+
+            grid-template-columns: 80px 1fr;
+
+            gap: 45px;
+
+            min-height: 190px;
+
+            padding-bottom: 60px;
+
+        }
+
+
+        /* NUMBER */
+
+        .process-marker {
+
+            position: relative;
+
+            z-index: 2;
+
+            width: 45px;
+
+            height: 45px;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background: #f5f9fd;
+
+            border: 1px solid rgba(0, 70, 130, .3);
+
+            box-shadow:
+
+                0 0 0 8px rgba(255, 255, 255, .8),
+
+                0 10px 30px rgba(0, 50, 100, .12);
+
+        }
+
+
+        .process-marker span {
+
+            font-family: Arial, sans-serif;
+
+            font-size: 11px;
+
+            letter-spacing: 1px;
+
+            color: #07518b;
+
+        }
+
+
+        /* CONTENT */
+
+        .process-content {
+
+            position: relative;
+
+            padding: 5px 0 30px;
+
+            border-bottom: 1px solid rgba(0, 40, 80, .08);
+
+        }
+
+
+        .process-en {
+
+            display: block;
+
+            margin-bottom: 12px;
+
+            font-family: Arial, sans-serif;
+
+            font-size: 10px;
+
+            letter-spacing: 4px;
+
+            color: #3679ad;
+
+            opacity: .7;
+
+        }
+
+
+        .process-content h3 {
+
+            margin: 0 0 12px;
+
+            font-family: 'Lotus', sans-serif;
+
+            font-size: 42px;
+
+            font-weight: 700;
+
+            color: #071a2d;
+
+        }
+
+
+        .process-content p {
+
+            max-width: 650px;
+
+            margin: 0;
+
+            font-family: 'Nazanin', sans-serif;
+
+            font-size: 21px;
+
+            line-height: 2;
+
+            color: rgba(0, 20, 40, .58);
+
+        }
+
+
+        /* HOVER */
+
+        .process-step {
+
+            transition: .5s ease;
+
+        }
+
+
+        .process-step:hover .process-marker {
+
+            background: #07518b;
+
+            border-color: #07518b;
+
+            transform: scale(1.12);
+
+            box-shadow:
+
+                0 0 0 8px rgba(255, 255, 255, .8),
+
+                0 0 30px rgba(0, 90, 160, .3);
+
+        }
+
+
+        .process-step:hover .process-marker span {
+
+            color: #fff;
+
+        }
+
+
+        .process-marker {
+
+            transition:
+
+                .5s cubic-bezier(.22, 1, .36, 1);
+
+        }
+
+        /* =========================
+   WHY EXPERTISE
+========================= */
+
+        .why-expertise {
+
+            position: relative;
+
+            display: grid;
+
+            grid-template-columns: 38% 62%;
+
+            padding: 160px 8% 180px;
+
+            background:
+
+                radial-gradient(circle at 85% 15%,
+                    rgba(57, 128, 197, .13),
+                    transparent 30%),
+
+                linear-gradient(120deg,
+                    #ffffff 0%,
+                    #f4f7fa 60%,
+                    #e7eef5 100%);
+
+            overflow: hidden;
+
+        }
+
+
+        /* subtle architectural grid */
+
+        .why-expertise::before {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background-image:
+
+                linear-gradient(rgba(0, 45, 90, .025) 1px,
+                    transparent 1px),
+
+                linear-gradient(90deg,
+                    rgba(0, 45, 90, .025) 1px,
+                    transparent 1px);
+
+            background-size: 100px 100px;
+
+            pointer-events: none;
+
+        }
+
+
+        /* =========================
+   LEFT INTRO
+========================= */
+
+        .why-intro {
+
+            position: sticky;
+
+            top: 120px;
+
+            height: fit-content;
+
+            padding-right: 60px;
+
+        }
+
+
+        .why-eyebrow {
+
+            display: block;
+
+            font-family: Arial, sans-serif;
+
+            font-size: 11px;
+
+            letter-spacing: 5px;
+
+            color: #155789;
+
+            opacity: .7;
+
+            margin-bottom: 35px;
+
+        }
+
+
+        .why-intro h2 {
+
+            margin: 0;
+
+            font-family: 'Lotus', sans-serif;
+
+            font-size: clamp(70px, 8vw, 135px);
+
+            line-height: .95;
+
+            font-weight: 400;
+
+            color: #071b30;
+
+        }
+
+
+        .why-intro h2 strong {
+
+            font-weight: 900;
+
+            background:
+
+                linear-gradient(90deg,
+                    #05284a,
+                    #1979bb);
+
+            -webkit-background-clip: text;
+
+            background-clip: text;
+
+            color: transparent;
+
+            padding-right: 4px;
+
+        }
+
+
+        .why-intro-line {
+
+            width: 100px;
+
+            height: 2px;
+
+            margin-top: 55px;
+
+            background: #075b97;
+
+        }
+
+
+        .why-index {
+
+            display: block;
+
+            margin-top: 30px;
+
+            font-family: Arial, sans-serif;
+
+            font-size: 11px;
+
+            letter-spacing: 3px;
+
+            color: #183c5b;
+
+            opacity: .45;
+
+        }
+
+
+        /* =========================
+   CONTENT
+========================= */
+
+        .why-content {
+
+            position: relative;
+
+            z-index: 2;
+
+        }
+
+
+        /* =========================
+   ITEMS
+========================= */
+
+        .why-item {
+
+            display: grid;
+
+            grid-template-columns: 80px 1fr;
+
+            gap: 30px;
+
+            padding: 0 0 75px;
+
+            margin-bottom: 75px;
+
+            border-bottom: 1px solid rgba(0, 45, 85, .1);
+
+        }
+
+
+        .why-number {
+
+            font-family: Arial, sans-serif;
+
+            font-size: 13px;
+
+            letter-spacing: 2px;
+
+            color: #075b97;
+
+            padding-top: 8px;
+
+        }
+
+
+        .why-text>span {
+
+            display: block;
+
+            margin-bottom: 12px;
+
+            font-family: Arial, sans-serif;
+
+            font-size: 9px;
+
+            letter-spacing: 4px;
+
+            color: #4b7fa6;
+
+        }
+
+
+        .why-text h3 {
+
+            margin: 0 0 20px;
+
+            font-family: 'Lotus', sans-serif;
+
+            font-size: 48px;
+
+            line-height: 1.3;
+
+            color: #071b30;
+
+        }
+
+
+        .why-text p {
+
+            max-width: 650px;
+
+            margin: 0 0 14px;
+
+            font-family: 'Nazanin', sans-serif;
+
+            font-size: 20px;
+
+            line-height: 2;
+
+            color: rgba(3, 24, 43, .58);
+
+        }
+
+
+        /* =========================
+   HOVER
+========================= */
+
+        .why-item {
+
+            transition:
+                transform .6s cubic-bezier(.22, 1, .36, 1);
+
+        }
+
+
+        .why-item:hover {
+
+            transform: translateX(-10px);
+
+        }
+
+
+        .why-item:hover .why-number {
+
+            color: #0080cc;
+
+        }
+
+
+        /* =========================
+   FINAL STATEMENT
+========================= */
+
+        .why-statement {
+
+            position: relative;
+
+            display: grid;
+
+            grid-template-columns: 80px 1fr;
+
+            gap: 30px;
+
+            margin-top: 20px;
+
+            padding: 60px 55px 65px;
+
+            background:
+
+                linear-gradient(135deg,
+                    #071b30,
+                    #0b3457);
+
+            color: #fff;
+
+            border-radius: 3px;
+
+            box-shadow:
+
+                0 35px 80px rgba(0, 40, 80, .22);
+
+            overflow: hidden;
+
+        }
+
+
+        .why-statement::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 300px;
+
+            height: 300px;
+
+            right: -100px;
+
+            top: -130px;
+
+            border-radius: 50%;
+
+            border: 1px solid rgba(255, 255, 255, .12);
+
+            box-shadow:
+
+                0 0 0 40px rgba(255, 255, 255, .025),
+
+                0 0 0 80px rgba(255, 255, 255, .018);
+
+        }
+
+
+        .statement-number {
+
+            font-family: Arial, sans-serif;
+
+            font-size: 12px;
+
+            letter-spacing: 2px;
+
+            opacity: .45;
+
+        }
+
+
+        .why-statement>div:last-child>span {
+
+            font-family: Arial, sans-serif;
+
+            font-size: 9px;
+
+            letter-spacing: 4px;
+
+            opacity: .5;
+
+        }
+
+
+        .why-statement h3 {
+
+            position: relative;
+
+            z-index: 2;
+
+            margin: 18px 0 25px;
+
+            font-family: 'Lotus', sans-serif;
+
+            font-size: 48px;
+
+            line-height: 1.45;
+
+            font-weight: 400;
+
+        }
+
+
+        .why-statement h3 strong {
+
+            color: #73c4f2;
+
+        }
+
+
+        .why-statement p {
+
+            position: relative;
+
+            z-index: 2;
+
+            max-width: 700px;
+
+            margin: 0 0 15px;
+
+            font-family: 'Nazanin', sans-serif;
+
+            font-size: 19px;
+
+            line-height: 2;
+
+            color: rgba(255, 255, 255, .65);
+
+        }
+
+
+        .statement-bottom {
+
+            position: relative;
+
+            z-index: 2;
+
+            margin-top: 35px;
+
+            padding-top: 25px;
+
+            border-top: 1px solid rgba(255, 255, 255, .15);
+
+            font-family: 'Nazanin', sans-serif;
+
+            font-size: 24px;
+
+            color: #fff;
+
+        }
+
+
+        /* =========================
+   MOBILE
+========================= */
+
+        @media (max-width: 900px) {
+
+            .why-expertise {
+
+                display: block;
+
+                padding: 100px 25px 120px;
+
+            }
+
+
+            .why-intro {
+
+                position: relative;
+
+                top: auto;
+
+                padding: 0;
+
+                margin-bottom: 90px;
+
+            }
+
+
+            .why-intro h2 {
+
+                font-size: 75px;
+
+            }
+
+
+            .why-intro-line {
+
+                margin-top: 35px;
+
+            }
+
+
+            .why-item {
+
+                grid-template-columns: 50px 1fr;
+
+                gap: 20px;
+
+                padding-bottom: 50px;
+
+                margin-bottom: 50px;
+
+            }
+
+
+            .why-number {
+
+                font-size: 11px;
+
+            }
+
+
+            .why-text h3 {
+
+                font-size: 35px;
+
+            }
+
+
+            .why-text p {
+
+                font-size: 18px;
+
+                line-height: 2;
+
+            }
+
+
+            .why-statement {
+
+                grid-template-columns: 40px 1fr;
+
+                gap: 15px;
+
+                padding: 40px 25px 45px;
+
+            }
+
+
+            .why-statement h3 {
+
+                font-size: 35px;
+
+            }
+
+
+            .why-statement p {
+
+                font-size: 17px;
+
+            }
+
+
+            .statement-bottom {
+
+                font-size: 20px;
+
+            }
+
+        }
+
+
+        /* =========================
+   SMALL MOBILE
+========================= */
+
+        @media (max-width: 480px) {
+
+            .why-expertise {
+
+                padding: 80px 18px 90px;
+
+            }
+
+
+            .why-intro {
+
+                margin-bottom: 65px;
+
+            }
+
+
+            .why-eyebrow {
+
+                font-size: 9px;
+
+                letter-spacing: 3px;
+
+            }
+
+
+            .why-intro h2 {
+
+                font-size: 60px;
+
+            }
+
+
+            .why-item {
+
+                grid-template-columns: 35px 1fr;
+
+                gap: 12px;
+
+                padding-bottom: 40px;
+
+                margin-bottom: 40px;
+
+            }
+
+
+            .why-text h3 {
+
+                font-size: 29px;
+
+            }
+
+
+            .why-text p {
+
+                font-size: 16px;
+
+                text-align: justify;
+
+            }
+
+
+            .why-statement {
+
+                grid-template-columns: 1fr;
+
+                gap: 20px;
+
+                padding: 35px 22px 40px;
+
+            }
+
+
+            .statement-number {
+
+                display: none;
+
+            }
+
+
+            .why-statement h3 {
+
+                font-size: 29px;
+
+            }
+
+
+            .why-statement p {
+
+                font-size: 16px;
+
+                text-align: justify;
+
+            }
+
+
+            .statement-bottom {
+
+                font-size: 19px;
+
+            }
+
+        }
+
+
+        /* =========================
+   MOBILE
+========================= */
+
+        @media (max-width: 900px) {
+
+            .inspection-process {
+
+                padding: 100px 25px 110px;
+
+            }
+
+
+            .inspection-process-header {
+
+                margin-bottom: 75px;
+
+            }
+
+
+            .inspection-process-header h2 {
+
+                font-size: 58px;
+
+            }
+
+
+            .inspection-process-header p {
+
+                font-size: 19px;
+
+                line-height: 2;
+
+            }
+
+
+            .process-timeline::before {
+
+                right: 18px;
+
+            }
+
+
+            .process-step {
+
+                grid-template-columns: 60px 1fr;
+
+                gap: 25px;
+
+                min-height: auto;
+
+                padding-bottom: 50px;
+
+            }
+
+
+            .process-marker {
+
+                width: 37px;
+
+                height: 37px;
+
+            }
+
+
+            .process-content {
+
+                padding-bottom: 25px;
+
+            }
+
+
+            .process-content h3 {
+
+                font-size: 32px;
+
+                line-height: 1.5;
+
+            }
+
+
+            .process-content p {
+
+                font-size: 17px;
+
+                line-height: 2;
+
+                text-align: justify;
+
+            }
+
+        }
+
+
+        @media (max-width: 480px) {
+
+            .inspection-process {
+
+                padding: 80px 18px 90px;
+
+            }
+
+
+            .inspection-process-header {
+
+                margin-bottom: 60px;
+
+            }
+
+
+            .inspection-process-header h2 {
+
+                font-size: 48px;
+
+            }
+
+
+            .inspection-process-header p {
+
+                font-size: 17px;
+
+            }
+
+
+            .process-step {
+
+                grid-template-columns: 45px 1fr;
+
+                gap: 18px;
+
+                padding-bottom: 40px;
+
+            }
+
+
+            .process-timeline::before {
+
+                right: 16px;
+
+            }
+
+
+            .process-marker {
+
+                width: 32px;
+
+                height: 32px;
+
+                box-shadow:
+
+                    0 0 0 5px rgba(255, 255, 255, .8);
+
+            }
+
+
+            .process-marker span {
+
+                font-size: 9px;
+
+            }
+
+
+            .process-en {
+
+                font-size: 8px;
+
+                letter-spacing: 3px;
+
+            }
+
+
+            .process-content h3 {
+
+                font-size: 27px;
+
+            }
+
+
+            .process-content p {
+
+                font-size: 16px;
+
+                line-height: 2;
+
+            }
 
         }
 
@@ -3305,6 +4946,92 @@
 
         }
 
+        /* =========================
+   MOBILE
+========================= */
+
+        @media (max-width: 900px) {
+
+            .expertise-for {
+
+                padding: 100px 20px;
+
+            }
+
+
+            .expertise-for-header {
+
+                margin-bottom: 50px;
+
+            }
+
+
+            .expertise-for-header h2 {
+
+                font-size: clamp(48px,
+                        12vw,
+                        75px);
+
+            }
+
+
+            .expertise-for-header p {
+
+                font-size: 19px;
+
+                line-height: 2;
+
+                margin-top: 22px;
+
+            }
+
+
+            .expertise-for-grid {
+
+                grid-template-columns: 1fr;
+
+                gap: 18px;
+
+            }
+
+
+            .expertise-card {
+
+                min-height: 320px;
+
+                padding: 25px;
+
+                border-radius: 20px;
+
+            }
+
+
+            .expertise-card-content h3 {
+
+                font-size: 32px;
+
+            }
+
+
+            .expertise-card-content p {
+
+                font-size: 18px;
+
+                line-height: 2;
+
+            }
+
+
+            .expertise-icon {
+
+                width: 52px;
+
+                height: 52px;
+
+            }
+
+        }
+
         @media(max-width:480px) {
 
 
@@ -3701,6 +5428,19 @@
 
 
         }
+
+        @media (max-width:900px) {
+            .fa-arrow-left {
+                display: none;
+            }
+        }
+
+        @media (max-width:480px) {
+            .fa-arrow-left {
+                display: none;
+            }
+        }
+
     </style>
 
 </head>
@@ -3735,6 +5475,8 @@
         <li data-go-to="6"></li>
         <li data-go-to="7"></li>
         <li data-go-to="8"></li>
+        <li data-go-to="9"></li>
+        <li data-go-to="10"></li>
     </ul>
 
 
@@ -3807,24 +5549,32 @@
 
 
             <h1 class="split">
-                نگاه خود
-                را بسازید
+                قبل از خرید، ساختمان را بشناسید.
             </h1>
 
 
 
             <div class="hero-tags">
-                <span style="border-top-right-radius: 12px; border-bottom-right-radius: 12px;">طراحی</span>
-                <span>ساخت</span>
-                <span style="border-top-left-radius: 12px; border-bottom-left-radius: 12px;">اجرا</span>
+                <span>
+                    خرید ملک یکی از مهم‌ترین تصمیم‌های مالی زندگی است. اما بسیاری از ایرادات فنی ساختمان در یک بازدید
+                    معمولی قابل تشخیص نیستند.
+                    با کارشناسی فنی ملک، ساختمان را از نظر سازه، معماری، تأسیسات، کیفیت اجرا، رطوبت، ایرادات ظاهری و
+                    سایر موارد قابل بررسی ارزیابی کنید و قبل از معامله، تصمیم آگاهانه‌تری بگیرید.
+                </span>
             </div>
 
 
 
-            <div style="display: flex; justify-content: center;">
+            <div style="display: flex; justify-content: center; gap: 48px;">
                 <button class="magnetic" style="font-family: 'Lotus', sans-serif; font-size: 22px; font-weight: bold;">
 
-                    نمونه پروژه ها
+                    درخواست کارشناسی ملک
+
+                </button>
+
+                <button class="magnetic" style="font-family: 'Lotus', sans-serif; font-size: 22px; font-weight: bold;">
+
+                    مشاهده خدمات
 
                 </button>
             </div>
@@ -3852,17 +5602,24 @@
             <div style="display: flex;">
                 <div style="border-bottom: 2px solid #00559b; height: 10px; width: 90px; margin-top: 35px;"></div>
                 <h2>
-                    <span style="margin-right: 40px;">فضاهایی را طراحی کنید</span>
-                    که فردا را شکل می‌دهند
+                    <span style="margin-right: 40px;">چرا قبل از خرید،</span>
+                    ملک را کارشناسی کنیم؟
                 </h2>
             </div>
 
 
             <p>
-                در <span>AASP</span>، معماری تنها ساختن یک بنا نیست؛
-                بلکه خلق تجربه‌ای است که میان انسان، فضا و زمان ارتباط برقرار می‌کند.
-                ما با رویکردی نوین در طراحی، معماری و اجرای پروژه‌های ساختمانی،
-                فضاهایی دقیق، منحصر‌به‌فرد و ماندگار می‌سازیم.
+                ظاهر یک ملک همیشه نشان‌دهنده وضعیت واقعی آن نیست.
+                ترک‌ها، رطوبت، مشکلات تأسیسات، ایرادات اجرایی، کیفیت نامناسب برخی بخش‌ها و بسیاری از موارد فنی ممکن است
+                در بازدید معمولی دیده نشوند یا اهمیت واقعی آنها مشخص نباشد.
+                یک بررسی فنی قبل از معامله می‌تواند به شما کمک کند:
+                - ایرادات ملک را پیش از خرید شناسایی کنید. <br>
+                - هزینه‌های احتمالی تعمیر و اصلاح را بهتر برآورد کنید. <br>
+                - درباره قیمت ملک تصمیم منطقی‌تری بگیرید. <br>
+                - موارد فنی را با فروشنده مطرح کنید. <br>
+                - با اطلاعات بیشتری قرارداد خود را منعقد کنید. <br>
+                <!-- <span style="font-size: 34px;"> قبل از اینکه هزینه تعمیرات یک ملک را پرداخت کنید، هزینه کارشناسی آن را
+                    پرداخت کنید. </span> -->
             </p>
 
         </div>
@@ -3895,7 +5652,7 @@
                     </div>
 
                     <div class="service-text">
-                        <h3>طراحی معماری</h3>
+                        <h3>کارشناسی فنی ملک</h3>
                     </div>
 
                     <div class="service-arrow">
@@ -3909,7 +5666,63 @@
                     </div>
 
                     <div class="service-text">
-                        <h3>اجرای پروژه</h3>
+                        <h3>بررسی معماری و کیفیت اجرا</h3>
+                    </div>
+
+                    <div class="service-arrow">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                </button>
+
+                <button class="service-btn">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+
+                    <div class="service-text">
+                        <h3>بررسی تأسیسات مکانیکی</h3>
+                    </div>
+
+                    <div class="service-arrow">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                </button>
+
+                <button class="service-btn">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+
+                    <div class="service-text">
+                        <h3>بررسی تأسیسات برقی</h3>
+                    </div>
+
+                    <div class="service-arrow">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                </button>
+
+                <button class="service-btn">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+
+                    <div class="service-text">
+                        <h3>بررسی رطوبت و نم‌ زدگی</h3>
+                    </div>
+
+                    <div class="service-arrow">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                </button>
+
+                <button class="service-btn">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+
+                    <div class="service-text">
+                        <h3>بررسی مشاعات</h3>
                     </div>
 
                     <div class="service-arrow">
@@ -3925,17 +5738,18 @@
 
             <div class="service-info"
                 style="height: 100%; width: 100%; border-top-left-radius: 24px; border-bottom-left-radius: 24px; font-family: 'Nazanin', sans-serif;">
-                <h3 style="font-size: 60px;">طراحی معماری</h3>
+                <h3 id="serviceTitle" style="font-size: 34px;">کارشناسی فنی ملک</h3>
 
-                <p style="font-size: 22px; margin-top: 23px;">
-                    طراحی فضاهای مسکونی، تجاری و اداری با بهره‌گیری از اصول معماری مدرن،
-                    زیبایی‌شناسی و استانداردهای روز دنیا.
+                <p id="serviceDescription" style="font-size: 22px; margin-top: 23px;">
+                    بررسی سازه‌ای در این خدمت بر اساس شرایط قابل مشاهده و امکانات و دسترسی موجود انجام می‌شود و جایگزین
+                    آزمایش‌های تخصصی یا محاسبات سازه‌ای نیست.
                 </p>
 
-                <ul style="font-size: 22px; margin-top: 20px;">
-                    <li>طراحی سه‌ بعدی پروژه</li>
-                    <li>پلان‌های اجرایی</li>
-                    <li>مشاوره تخصصی</li>
+                <ul id="serviceFeatures" style="font-size: 22px; margin-top: 20px;">
+                    <li>بررسی وضعیت فنی و اجرایی ملک و شناسایی ایرادات و نواقص قابل مشاهده و قابل بررسی.</li>
+                    <li>بررسی سازه</li>
+                    <li>بررسی ظاهری اجزای سازه‌ای، ترک‌ها، نشست‌های قابل مشاهده، تغییر شکل‌ها و سایر نشانه‌های احتمالی
+                        مشکلات سازه‌ای.</li>
                 </ul>
             </div>
         </div>
@@ -3944,10 +5758,360 @@
 
     </section>
 
+    <!-- WHO IS IT FOR -->
+
+    <section class="expertise-for light-nav" data-section="3">
+
+        <div class="expertise-for-header">
+
+            <div class="expertise-label">
+                <span></span>
+                EXPERTISE
+            </div>
+
+            <h2>
+                کارشناسی<br>
+                <strong>برای چه کسانی است؟</strong>
+            </h2>
+
+            <p>
+                پیش از هر تصمیم مهم، شناخت دقیق وضعیت ملک
+                می‌تواند از هزینه‌ها و ریسک‌های آینده جلوگیری کند.
+            </p>
+
+        </div>
 
 
+        <div class="expertise-for-grid">
 
-    <section class="process" data-section="3">
+
+            <!-- 01 -->
+
+            <div class="expertise-card">
+
+                <div class="expertise-card-top">
+
+                    <span class="expertise-number">
+                        01
+                    </span>
+
+                    <div class="expertise-icon">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+
+                </div>
+
+                <div class="expertise-card-content">
+
+                    <h3>
+                        خریداران ملک
+                    </h3>
+
+                    <p>
+                        اگر قصد خرید آپارتمان، خانه، ویلای مسکونی
+                        یا ملک تجاری دارید، قبل از معامله وضعیت
+                        فنی آن را بررسی کنید.
+                    </p>
+
+                </div>
+
+                <!-- <div class="expertise-arrow">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div> -->
+
+            </div>
+
+
+            <!-- 02 -->
+
+            <div class="expertise-card">
+
+                <div class="expertise-card-top">
+
+                    <span class="expertise-number">
+                        02
+                    </span>
+
+                    <div class="expertise-icon">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+
+                </div>
+
+                <div class="expertise-card-content">
+
+                    <h3>
+                        مالکان
+                    </h3>
+
+                    <p>
+                        اگر قصد فروش ملک خود را دارید، می‌توانید
+                        پیش از عرضه، ایرادات فنی و اجرایی ملک را
+                        شناسایی و برای اصلاح آنها اقدام کنید.
+                    </p>
+
+                </div>
+
+                <!-- <div class="expertise-arrow">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div> -->
+
+            </div>
+
+
+            <!-- 03 -->
+
+            <div class="expertise-card">
+
+                <div class="expertise-card-top">
+
+                    <span class="expertise-number">
+                        03
+                    </span>
+
+                    <div class="expertise-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                </div>
+
+                <div class="expertise-card-content">
+
+                    <h3>
+                        سرمایه‌گذاران
+                    </h3>
+
+                    <p>
+                        برای سرمایه‌گذاری در یک ملک، شناخت وضعیت
+                        ساختمان و هزینه‌های احتمالی تعمیر و اصلاح
+                        اهمیت زیادی دارد.
+                    </p>
+
+                </div>
+
+                <!-- <div class="expertise-arrow">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div> -->
+
+            </div>
+
+
+            <!-- 04 -->
+
+            <div class="expertise-card">
+
+                <div class="expertise-card-top">
+
+                    <span class="expertise-number">
+                        04
+                    </span>
+
+                    <div class="expertise-icon">
+                        <i class="fa-solid fa-building-circle-check"></i>
+                    </div>
+
+                </div>
+
+                <div class="expertise-card-content">
+
+                    <h3>
+                        خریداران ملک نوساز
+                    </h3>
+
+                    <p>
+                        نوساز بودن یک ساختمان به معنی بی‌نقص بودن
+                        آن نیست. کیفیت اجرای ساختمان باید بررسی شود.
+                    </p>
+
+                </div>
+
+                <!-- <div class="expertise-arrow">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div> -->
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- PROCESS -->
+
+    <section class="inspection-process light-nav" data-section="4">
+
+        <div class="inspection-process-header">
+
+            <div class="process-label">
+                <span>HOW IT WORKS</span>
+            </div>
+
+            <h2>
+                فرآیند <strong>کارشناسی</strong>
+            </h2>
+
+            <p>
+                از ثبت درخواست تا دریافت گزارش نهایی،
+                تمام مراحل کارشناسی با دقت و شفافیت انجام می‌شود.
+            </p>
+
+        </div>
+
+
+        <div class="process-timeline">
+
+
+            <!-- 01 -->
+
+            <div class="process-step">
+
+                <div class="process-marker">
+                    <span>01</span>
+                </div>
+
+                <div class="process-content">
+
+                    <span class="process-en">REQUEST</span>
+
+                    <h3>ثبت درخواست</h3>
+
+                    <p>
+                        مشخصات اولیه ملک، نوع ملک و زمان موردنظر
+                        شما دریافت می‌شود.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 02 -->
+
+            <div class="process-step">
+
+                <div class="process-marker">
+                    <span>02</span>
+                </div>
+
+                <div class="process-content">
+
+                    <span class="process-en">SCHEDULE</span>
+
+                    <h3>هماهنگی بازدید</h3>
+
+                    <p>
+                        زمان مناسب برای حضور کارشناس در محل
+                        هماهنگ می‌شود.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 03 -->
+
+            <div class="process-step">
+
+                <div class="process-marker">
+                    <span>03</span>
+                </div>
+
+                <div class="process-content">
+
+                    <span class="process-en">INSPECTION</span>
+
+                    <h3>بازدید و بررسی</h3>
+
+                    <p>
+                        کارشناس بخش‌های قابل دسترسی ساختمان را
+                        بر اساس فرآیند کارشناسی بررسی می‌کند.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 04 -->
+
+            <div class="process-step">
+
+                <div class="process-marker">
+                    <span>04</span>
+                </div>
+
+                <div class="process-content">
+
+                    <span class="process-en">DOCUMENTATION</span>
+
+                    <h3>ثبت و مستندسازی</h3>
+
+                    <p>
+                        موارد مهم، ایرادات و نواقص قابل مشاهده
+                        ثبت و در صورت نیاز مستندسازی تصویری می‌شوند.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 05 -->
+
+            <div class="process-step">
+
+                <div class="process-marker">
+                    <span>05</span>
+                </div>
+
+                <div class="process-content">
+
+                    <span class="process-en">REPORT</span>
+
+                    <h3>تهیه گزارش</h3>
+
+                    <p>
+                        نتایج بررسی در قالب یک گزارش فنی
+                        ارائه می‌شود.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 06 -->
+
+            <div class="process-step">
+
+                <div class="process-marker">
+                    <span>06</span>
+                </div>
+
+                <div class="process-content">
+
+                    <span class="process-en">RESULT</span>
+
+                    <h3>توضیح نتایج</h3>
+
+                    <p>
+                        موارد مهم گزارش برای شما توضیح داده می‌شود
+                        تا بتوانید با شناخت بیشتری درباره ملک تصمیم بگیرید.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <section class="process" data-section="5">
 
         <div class="building-compare">
             <img src="building-finished.webp" class="finished">
@@ -3976,7 +6140,7 @@
     </section>
 
 
-    <section class="special-projects light-nav" data-section="4">
+    <section class="special-projects light-nav" data-section="6">
 
         <div class="special-project">
             <img src="building-finished.webp" alt="">
@@ -4034,7 +6198,7 @@
     <!-- HORIZONTAL PROJECT SECTION -->
 
 
-    <section class="projects light-nav" data-section="5">
+    <section class="projects light-nav" data-section="7">
         <div class="projects-track">
             <div class="project">
                 <div class="image-wrapper">
@@ -4101,7 +6265,7 @@
 
     <!-- VIDEO SHOWCASE -->
 
-    <section class="video-showcase light-nav" data-section="6">
+    <section class="video-showcase light-nav" data-section="8">
 
         <div class="video-showcase-header">
 
@@ -4308,11 +6472,11 @@
     <!-- SERVICES -->
 
 
-    <section class="services" data-section="7">
+    <!-- <section class="services" data-section="9"> -->
 
-        <!-- NUMBERS -->
+    <!-- NUMBERS -->
 
-        <div class="numbers-container" style="display: flex; flex-direction: column; gap: 40px;">
+    <!-- <div class="numbers-container" style="display: flex; flex-direction: column; gap: 40px;">
 
             <div class="numbers">
                 <h2 data-number="15" style="margin-left: 40px;">
@@ -4358,6 +6522,189 @@
 
 
 
+    </section> -->
+
+    <!-- WHY US -->
+
+    <section class="why-expertise light-nav" data-section="9">
+
+        <div class="why-intro">
+
+            <span class="why-eyebrow">
+                WHY OUR EXPERTISE
+            </span>
+
+            <h2>
+                چرا
+                <br>
+                کارشناسی
+                <br>
+                <strong>ما؟</strong>
+            </h2>
+
+            <div class="why-intro-line"></div>
+
+            <span class="why-index">
+            </span>
+
+        </div>
+
+
+        <div class="why-content">
+
+
+            <!-- 01 -->
+
+            <article class="why-item">
+
+                <div class="why-number">
+                    01
+                </div>
+
+                <div class="why-text">
+
+                    <span>EXPERIENCE</span>
+
+                    <h3>
+                        تجربه واقعی در ساختمان
+                    </h3>
+
+                    <p>
+                        کارشناسی ساختمان زمانی ارزشمندتر است که کارشناس
+                        علاوه بر دانش فنی، تجربه واقعی در اجرای ساختمان داشته باشد.
+                    </p>
+
+                    <p>
+                        ما با تکیه بر دانش مهندسی و تجربه اجرایی در پروژه‌های
+                        ساختمانی، تلاش می‌کنیم وضعیت ملک را فراتر از یک
+                        بازدید ظاهری بررسی کنیم.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- 02 -->
+
+            <article class="why-item">
+
+                <div class="why-number">
+                    02
+                </div>
+
+                <div class="why-text">
+
+                    <span>DOCUMENTED</span>
+
+                    <h3>
+                        گزارش مستند
+                    </h3>
+
+                    <p>
+                        نتایج بررسی صرفاً به صورت شفاهی ارائه نمی‌شود
+                        و موارد مهم در قالب گزارش فنی ثبت می‌شوند.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- 03 -->
+
+            <article class="why-item">
+
+                <div class="why-number">
+                    03
+                </div>
+
+                <div class="why-text">
+
+                    <span>NEUTRAL</span>
+
+                    <h3>
+                        نگاه بی‌طرفانه
+                    </h3>
+
+                    <p>
+                        هدف کارشناسی، کمک به تصمیم‌گیری شماست؛
+                        نه تأیید یا رد معامله به نفع یکی از طرفین.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- 04 -->
+
+            <article class="why-item">
+
+                <div class="why-number">
+                    04
+                </div>
+
+                <div class="why-text">
+
+                    <span>BEFORE DEAL</span>
+
+                    <h3>
+                        بررسی قبل از معامله
+                    </h3>
+
+                    <p>
+                        بهترین زمان برای شناسایی ایرادات ملک،
+                        قبل از امضای قرارداد و پرداخت بخش اصلی
+                        مبلغ معامله است.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- FINAL STATEMENT -->
+
+            <div class="why-statement">
+
+                <div class="statement-number">
+                    05
+                </div>
+
+                <div>
+
+                    <span>
+                        IMPORTANT
+                    </span>
+
+                    <h3>
+                        کارشناسی ملک فقط برای
+                        <strong>خانه‌های قدیمی</strong> نیست.
+                    </h3>
+
+                    <p>
+                        یک تصور اشتباه این است که فقط ساختمان‌های قدیمی
+                        نیاز به کارشناسی دارند.
+                    </p>
+
+                    <p>
+                        حتی یک واحد نوساز نیز ممکن است دارای ایرادات اجرایی،
+                        مشکلات تأسیساتی، رطوبت، ضعف در جزئیات اجرا یا نواقصی
+                        باشد که در بازدید عادی دیده نمی‌شوند.
+                    </p>
+
+                    <div class="statement-bottom">
+                        نوساز بودن، جای کارشناسی فنی را نمی‌گیرد.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
     </section>
 
 
@@ -4367,7 +6714,7 @@
     <!-- FINAL -->
 
 
-    <section class="contact" data-section="8">
+    <section class="contact" data-section="10">
 
         <h2 class="split" style="font-family: 'Badr', sans-serif;">
 
@@ -4506,47 +6853,41 @@
     <script>
         const lightSections = document.querySelectorAll(".light-nav");
 
+        function updateNavColor() {
 
-        const navObserver = new IntersectionObserver((entries) => {
+            const middle = window.innerHeight / 2;
 
+            let isLight = false;
 
-            entries.forEach(entry => {
+            lightSections.forEach(section => {
 
+                const rect = section.getBoundingClientRect();
 
-                if (entry.isIntersecting) {
-
-
-                    nav.classList.add("light");
-
-
+                if (
+                    rect.top <= middle &&
+                    rect.bottom >= middle
+                ) {
+                    isLight = true;
                 }
-
-
-                else {
-
-
-                    nav.classList.remove("light");
-
-
-                }
-
 
             });
 
+            if (isLight) {
 
-        }, {
+                nav.classList.add("light");
 
-            threshold: .5
+            } else {
 
-        });
+                nav.classList.remove("light");
 
+            }
 
+        }
 
-        lightSections.forEach(section => {
+        window.addEventListener("scroll", updateNavColor);
+        window.addEventListener("resize", updateNavColor);
 
-            navObserver.observe(section);
-
-        });
+        updateNavColor();
     </script>
 
     <!-- nav hider -->
@@ -5825,6 +8166,146 @@
 
         });
 
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const serviceButtons = document.querySelectorAll(".service-btn");
+
+            const serviceImage = document.getElementById("serviceImage");
+            const serviceTitle = document.getElementById("serviceTitle");
+            const serviceDescription = document.getElementById("serviceDescription");
+            const serviceFeatures = document.getElementById("serviceFeatures");
+
+
+            const services = [
+
+                {
+                    title: "کارشناسی فنی ملک",
+
+                    description:
+                        "بررسی سازه‌ای در این خدمت بر اساس شرایط قابل مشاهده و امکانات و دسترسی موجود انجام می‌شود و جایگزین آزمایش‌های تخصصی یا محاسبات سازه‌ای نیست.",
+
+                    features: [
+                        "بررسی وضعیت فنی و اجرایی ملک و شناسایی ایرادات و نواقص قابل مشاهده و قابل بررسی.",
+                        "بررسی سازه",
+                        "بررسی ظاهری اجزای سازه‌ای، ترک‌ها، نشست‌های قابل مشاهده، تغییر شکل‌ها و سایر نشانه‌های احتمالی مشکلات سازه‌ای.",
+                    ],
+
+                    image: "construction.webp"
+                },
+
+
+                {
+                    title: "بررسی معماری و کیفیت اجرا",
+
+                    description:
+                        "ارزیابی کلی کیفیت ساخت، طراحی و اجرای ساختمان.",
+
+                    features: [
+                        "بررسی کیفیت اجرای دیوار ها، کف‌ ها، سقف‌ ها، نما، در و پنجره، قرنیز ها و سایر اجزای معماری قابل دسترسی.",
+                    ],
+
+                    image: "construction.webp"
+                },
+
+                {
+                    title: "بررسی تأسیسات مکانیکی",
+
+                    description:
+                        "بررسی عملکرد صحیح و وضعیت کلی تأسیسات مکانیکی ساختمان.",
+
+                    features: [
+                        "بررسی وضعیت قابل مشاهده سیستم‌های آب، فاضلاب، گرمایش، سرمایش و سایر تجهیزات مکانیکی ساختمان.",
+                    ],
+
+                    image: "construction.webp"
+                },
+
+                {
+                    title: "بررسی تأسیسات برقی",
+
+                    description:
+                        "ارزیابی وضعیت و عملکرد سیستم‌های برقی و تجهیزات ساختمان.",
+
+                    features: [
+                        "بررسی ظاهری تابلو برق، کلیدها، پریزها، سیم‌کشی‌های قابل دسترس و سایر اجزای قابل بررسی تأسیسات برقی.",
+                    ],
+
+                    image: "construction.webp"
+                },
+
+                {
+                    title: "بررسی رطوبت و نم‌زدگی",
+
+                    description:
+                        "بررسی وضعیت رطوبت و شناسایی مشکلات احتمالی ساختمان.",
+
+                    features: [
+                        "بررسی نشانه‌های ظاهری رطوبت، نم، آب‌دادگی و آسیب‌های ناشی از آن در بخش‌های قابل دسترس ساختمان.",
+                    ],
+
+                    image: "construction.webp"
+                },
+
+                {
+                    title: "بررسی مشاعات",
+
+                    description:
+                        "ارزیابی وضعیت کلی فضاها و بخش‌های مشترک ساختمان.",
+
+                    features: [
+                        "بررسی قسمت‌هایی مانند پارکینگ، راه‌پله، پشت‌بام، نما، آسانسور و سایر قسمت‌های قابل دسترسی ساختمان.",
+                    ],
+
+                    image: "construction.webp"
+                },
+
+            ];
+
+
+            serviceButtons.forEach(function (button, index) {
+
+                button.addEventListener("click", function () {
+
+                    if (button.classList.contains("active")) {
+                        return;
+                    }
+
+                    serviceButtons.forEach(function (btn) {
+                        btn.classList.remove("active");
+                    });
+
+
+                    button.classList.add("active");
+
+
+                    const service = services[index];
+
+                    serviceTitle.textContent = service.title;
+
+                    serviceDescription.textContent = service.description;
+
+                    serviceFeatures.innerHTML = "";
+
+                    service.features.forEach(function (feature) {
+
+                        const li = document.createElement("li");
+
+                        li.textContent = feature;
+
+                        serviceFeatures.appendChild(li);
+
+                    });
+
+                    serviceImage.src = service.image;
+
+                });
+
+            });
+
+        });
     </script>
 
 
