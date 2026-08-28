@@ -42,6 +42,31 @@
             src: url("fonts/BNazanin.woff2") format("woff2");
         }
 
+        @font-face {
+            font-family: "Kalameh-SemiBold";
+            src: url("fonts/Kalameh-SemiBold.woff") format("woff2");
+        }
+
+        @font-face {
+            font-family: "Kalameh-Bold";
+            src: url("fonts/Kalameh-Bold.woff") format("woff2");
+        }
+
+        @font-face {
+            font-family: "Kalameh-Medium";
+            src: url("fonts/Kalameh-Medium.woff") format("woff2");
+        }
+
+        @font-face {
+            font-family: "Kalameh-Regular";
+            src: url("fonts/Kalameh-Regular.woff") format("woff2");
+        }
+
+        @font-face {
+            font-family: "Yekan";
+            src: url("fonts/Yekan.woff2") format("woff2");
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -296,23 +321,15 @@
         .menu {
             display: flex;
             gap: 45px;
-            font-family: 'Lotus', sans-serif;
+            font-family: 'Yekan', sans-serif;
         }
 
         .menu a {
-
             position: relative;
-
             color: #ffffff;
-
             text-decoration: none;
-
-            font-size: 22px;
-
-            font-weight: bold;
-
+            font-size: 18px;
             transition: .35s;
-
             padding: 8px 0;
         }
 
@@ -418,22 +435,28 @@
             justify-content: center;
             flex-wrap: wrap;
             gap: 3px;
-            font-family: 'Nazanin', sans-serif;
+            font-family: 'Kalameh-Regular', sans-serif;
             margin: 60px auto 0;
         }
 
+        .split {
+            cursor: pointer;
+        }
+
         .hero-tags span {
+            line-height: 1.8;
             padding: 10px 18px;
             /* border-radius: 999px; */
-            background: rgba(255, 255, 255, .08);
+            background: rgb(255 255 255 / 0%);
             /* border: 1px solid rgba(255, 255, 255, .12); */
             backdrop-filter: blur(8px);
             color: #ffffff;
-            font-size: 24px;
+            font-size: 18px;
             font-weight: 500;
-            max-width: 1000px;
+            max-width: 850px;
             transition: .35s;
             border-radius: 18px;
+            cursor: pointer;
         }
 
         .hero-tags span:hover {
@@ -499,7 +522,7 @@
 
             overflow: hidden;
 
-            font-family: 'Nazanin', sans-serif;
+            font-family: 'Kalameh-Regular', sans-serif;
 
         }
 
@@ -572,17 +595,15 @@
 
 
         .intro p {
-
-            font-weight: 600;
-
+            font-weight: 100;
             margin-top: 50px;
-
-            font-size: 24px;
-
+            font-size: 20px;
             line-height: 2;
-
             color: #1b2a38;
+        }
 
+        .intro p span {
+            font-weight: 600;
         }
 
 
@@ -649,7 +670,7 @@
 
             flex-direction: column;
 
-            gap: 18px;
+            gap: 12px;
 
         }
 
@@ -899,8 +920,8 @@
 
 
         .project h3 {
-            font-family: 'Nazanin', sans-serif;
-            font-size: 38px;
+            font-family: 'Kalameh-Regular', sans-serif;
+            font-size: 30px;
             margin-top: 5px;
             color: #000;
         }
@@ -1073,7 +1094,7 @@
 
             margin-top: 30px;
 
-            font-family: 'Nazanin', sans-serif;
+            font-family: 'Kalameh-Regular', sans-serif;
 
             font-size: 22px;
 
@@ -1292,7 +1313,7 @@
 
             margin: 0;
 
-            font-family: 'Nazanin', sans-serif;
+            font-family: 'Kalameh-Regular', sans-serif;
 
             font-size: 24px;
 
@@ -1305,7 +1326,7 @@
 
             margin: 4px 0 0;
 
-            font-family: 'Nazanin', sans-serif;
+            font-family: 'Kalameh-Regular', sans-serif;
 
             font-size: 16px;
 
@@ -1462,7 +1483,7 @@
 
 
         .service p {
-            font-family: 'Nazanin', sans-serif;
+            font-family: 'Kalameh-Regular', sans-serif;
             color: #999;
             font-size: 24px;
         }
@@ -1472,7 +1493,7 @@
 
 
         .numbers {
-            font-family: 'Nazanin', sans-serif;
+            font-family: 'Kalameh-Regular', sans-serif;
             padding: 10px 8% 10px 8%;
             text-align: center;
             transition: .4s ease;
@@ -1622,14 +1643,16 @@
 
 
         .special-projects {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            /* display: grid;
+            grid-template-columns: repeat(2, 1fr); */
+            display: flex;
+            justify-content: center;
             gap: 70px;
             padding: 100px 8%;
             position: relative;
             overflow: hidden;
             background: #F4F4EC;
-            font-family: 'Nazanin', sans-serif;
+            font-family: 'Kalameh-Regular', sans-serif;
         }
 
         .special-projects::before {
@@ -1680,7 +1703,7 @@
         }
 
         .special-project img {
-            width: 100%;
+            width: 70%;
             height: auto;
         }
 
@@ -1690,7 +1713,7 @@
         }
 
         .special-project-info p {
-            font-family: 'Badr', sans-serif;
+            font-family: 'Kalameh-Regular', sans-serif;
             font-size: 24px;
             color: #000000a4;
             backdrop-filter: blur(1px);
@@ -1767,7 +1790,7 @@
             margin-top: 20px;
             line-height: 1.9;
             cursor: default;
-            font-size: 20px;
+            font-size: 18px;
         }
 
         .building-caption.reveal {
@@ -2050,7 +2073,7 @@
 
             margin-top: 30px;
 
-            font-family: 'Nazanin', sans-serif;
+            font-family: 'Kalameh-Regular', sans-serif;
 
             font-size: 23px;
 
@@ -2261,7 +2284,7 @@
 
             margin: 0;
 
-            font-family: 'Nazanin', sans-serif;
+            font-family: 'Kalameh-Regular', sans-serif;
 
             font-size: 21px;
 
@@ -2909,7 +2932,7 @@
 
             margin-top: 30px;
 
-            font-family: 'Nazanin', sans-serif;
+            font-family: 'Kalameh-Regular', sans-serif;
 
             font-size: 22px;
 
@@ -3080,7 +3103,7 @@
 
             margin: 0;
 
-            font-family: 'Nazanin', sans-serif;
+            font-family: 'Kalameh-Regular', sans-serif;
 
             font-size: 21px;
 
@@ -3381,7 +3404,7 @@
 
             margin: 0 0 14px;
 
-            font-family: 'Nazanin', sans-serif;
+            font-family: 'Kalameh-Regular', sans-serif;
 
             font-size: 20px;
 
@@ -3544,7 +3567,7 @@
 
             margin: 0 0 15px;
 
-            font-family: 'Nazanin', sans-serif;
+            font-family: 'Kalameh-Regular', sans-serif;
 
             font-size: 19px;
 
@@ -3567,11 +3590,781 @@
 
             border-top: 1px solid rgba(255, 255, 255, .15);
 
-            font-family: 'Nazanin', sans-serif;
+            font-family: 'Kalameh-Regular', sans-serif;
 
             font-size: 24px;
 
             color: #fff;
+
+        }
+
+        /* =========================
+   FINAL INFORMATION
+========================= */
+
+        .final-information {
+
+            position: relative;
+
+            padding: 150px 8%;
+
+            background:
+
+                radial-gradient(circle at 10% 10%,
+                    rgba(41, 101, 165, .35),
+                    transparent 30%),
+
+                radial-gradient(circle at 90% 90%,
+                    rgba(70, 120, 180, .18),
+                    transparent 35%),
+
+                linear-gradient(135deg,
+                    #07111f,
+                    #0b1b30 45%,
+                    #102b49);
+
+            color: #fff;
+
+            overflow: hidden;
+
+        }
+
+
+        /* GRID */
+
+        .final-information::before {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background-image:
+
+                linear-gradient(rgba(255, 255, 255, .035) 1px,
+                    transparent 1px),
+
+                linear-gradient(90deg,
+                    rgba(255, 255, 255, .035) 1px,
+                    transparent 1px);
+
+            background-size: 80px 80px;
+
+            pointer-events: none;
+
+        }
+
+
+        /* HEADER */
+
+        .final-information-header {
+
+            position: relative;
+
+            z-index: 2;
+
+            max-width: 800px;
+
+            margin-bottom: 100px;
+
+        }
+
+
+        .final-information-header span {
+
+            display: block;
+
+            margin-bottom: 25px;
+
+            font-family: Arial, sans-serif;
+
+            font-size: 11px;
+
+            letter-spacing: 6px;
+
+            opacity: .55;
+
+        }
+
+
+        .final-information-header h2 {
+
+            margin: 0;
+
+            font-family: 'Lotus', sans-serif;
+
+            font-size: clamp(60px, 8vw, 120px);
+
+            font-weight: 400;
+
+            line-height: 1;
+
+        }
+
+
+        .final-information-header h2 strong {
+
+            font-weight: 900;
+
+            background:
+
+                linear-gradient(90deg,
+                    #ffffff,
+                    #8bb8e8);
+
+            -webkit-background-clip: text;
+
+            background-clip: text;
+
+            color: transparent;
+
+            padding-right: 3px;
+
+        }
+
+
+        .final-information-header p {
+
+            max-width: 550px;
+
+            margin-top: 35px;
+
+            font-family: 'Kalameh-Regular', sans-serif;
+
+            font-size: 21px;
+
+            line-height: 2;
+
+            color: rgba(255, 255, 255, .55);
+
+        }
+
+
+
+        /* =========================
+   LAYOUT
+========================= */
+
+        .information-layout {
+
+            position: relative;
+
+            z-index: 2;
+
+            display: grid;
+
+            grid-template-columns: 1.35fr .65fr;
+
+            gap: 80px;
+
+            align-items: start;
+
+        }
+
+
+
+        /* =========================
+   FAQ
+========================= */
+
+        .faq-panel {
+
+            border-top: 1px solid rgba(255, 255, 255, .25);
+
+        }
+
+
+        .panel-title {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 25px;
+
+            padding: 25px 0 35px;
+
+        }
+
+
+        .panel-title span {
+
+            font-family: Arial, sans-serif;
+
+            font-size: 11px;
+
+            letter-spacing: 3px;
+
+            opacity: .45;
+
+        }
+
+
+        .panel-title h3 {
+
+            margin: 0;
+
+            font-family: 'Kalameh-Regular', sans-serif;
+
+            font-size: 32px;
+
+            font-weight: normal;
+
+        }
+
+
+
+        /* FAQ ITEM */
+
+        .faq-item {
+
+            border-top: 1px solid rgba(255, 255, 255, .12);
+
+        }
+
+
+        .faq-item:last-child {
+
+            border-bottom: 1px solid rgba(255, 255, 255, .12);
+
+        }
+
+
+        .faq-item button {
+
+            width: 100%;
+
+            padding: 28px 5px;
+
+            border: none;
+
+            outline: none;
+
+            background: transparent;
+
+            color: #fff;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            cursor: pointer;
+
+            text-align: right;
+
+            font-family: 'Kalameh-Regular', sans-serif;
+
+            font-size: 21px;
+
+        }
+
+
+        .faq-item button i {
+
+            width: 35px;
+
+            height: 35px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border: 1px solid rgba(255, 255, 255, .25);
+
+            border-radius: 50%;
+
+            font-style: normal;
+
+            font-family: Arial, sans-serif;
+
+            font-size: 18px;
+
+            transition: .4s;
+
+        }
+
+
+        .faq-item button:hover i {
+
+            background: #fff;
+
+            color: #07111f;
+
+        }
+
+
+        .faq-answer {
+
+            display: grid;
+
+            grid-template-rows: 0fr;
+
+            transition: .5s ease;
+
+        }
+
+
+        .faq-answer p {
+
+            overflow: hidden;
+
+            margin: 0;
+
+            padding: 0 5px;
+
+            font-family: 'Kalameh-Regular', sans-serif;
+
+            font-size: 18px;
+
+            line-height: 2;
+
+            color: rgba(255, 255, 255, .55);
+
+        }
+
+
+        .faq-item.open .faq-answer {
+
+            grid-template-rows: 1fr;
+
+        }
+
+
+        .faq-item.open .faq-answer p {
+
+            padding-bottom: 25px;
+
+        }
+
+
+        .faq-item.open button i {
+
+            transform: rotate(45deg);
+
+            background: #fff;
+
+            color: #07111f;
+
+        }
+
+
+
+        /* =========================
+   SIDE
+========================= */
+
+        .information-side {
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 25px;
+
+        }
+
+
+        /* CARDS */
+
+        .price-card,
+        .about-card {
+
+            position: relative;
+
+            padding: 40px;
+
+            border: 1px solid rgba(255, 255, 255, .14);
+
+            background:
+
+                linear-gradient(145deg,
+                    rgba(255, 255, 255, .13),
+                    rgba(255, 255, 255, .035));
+
+            backdrop-filter: blur(20px);
+
+            -webkit-backdrop-filter: blur(20px);
+
+            box-shadow:
+
+                0 30px 80px rgba(0, 0, 0, .18);
+
+        }
+
+
+        .card-number {
+
+            position: absolute;
+
+            top: 25px;
+
+            left: 30px;
+
+            font-family: Arial, sans-serif;
+
+            font-size: 10px;
+
+            letter-spacing: 3px;
+
+            opacity: .4;
+
+        }
+
+
+        .card-label {
+
+            display: block;
+
+            margin-bottom: 25px;
+
+            font-family: Arial, sans-serif;
+
+            font-size: 10px;
+
+            letter-spacing: 4px;
+
+            opacity: .5;
+
+        }
+
+
+        .price-card h3 {
+
+            margin: 0;
+
+            font-family: 'Kalameh-Regular', sans-serif;
+
+            font-size: 38px;
+
+        }
+
+
+        .price-card p {
+
+            margin-top: 20px;
+
+            font-family: 'Kalameh-Regular', sans-serif;
+
+            font-size: 18px;
+
+            line-height: 2;
+
+            color: rgba(255, 255, 255, .55);
+
+        }
+
+
+        /* PRICE ITEMS */
+
+        .price-items {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 8px;
+
+            margin: 25px 0;
+
+        }
+
+
+        .price-items span {
+
+            padding: 7px 13px;
+
+            border: 1px solid rgba(255, 255, 255, .15);
+
+            border-radius: 30px;
+
+            font-family: 'Kalameh-Regular', sans-serif;
+
+            font-size: 14px;
+
+            color: rgba(255, 255, 255, .65);
+
+        }
+
+
+        /* BUTTON */
+
+        .price-button {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            padding: 17px 20px;
+
+            margin-top: 30px;
+
+            background: #fff;
+
+            color: #07111f;
+
+            text-decoration: none;
+
+            font-family: 'Kalameh-Regular', sans-serif;
+
+            font-size: 18px;
+
+            transition: .4s;
+
+        }
+
+
+        .price-button b {
+
+            font-family: Arial, sans-serif;
+
+            font-size: 22px;
+
+            font-weight: normal;
+
+        }
+
+
+        .price-button:hover {
+
+            transform: translateY(-4px);
+
+            box-shadow:
+
+                0 15px 35px rgba(0, 0, 0, .25);
+
+        }
+
+
+
+        /* =========================
+   ABOUT
+========================= */
+
+        .about-card {
+
+            background: #f4f5f2;
+
+            color: #07111f;
+
+        }
+
+
+        .about-card .card-label {
+
+            color: #07111f;
+
+        }
+
+
+        .about-card h3 {
+
+            margin: 0;
+
+            font-family: 'Lotus', sans-serif;
+
+            font-size: 39px;
+
+            line-height: 1.35;
+
+            font-weight: 400;
+
+        }
+
+
+        .about-card p {
+
+            font-family: 'Kalameh-Regular', sans-serif;
+
+            font-size: 17px;
+
+            line-height: 2;
+
+            color: rgba(7, 17, 31, .65);
+
+        }
+
+
+        .about-line {
+
+            width: 70px;
+
+            height: 1px;
+
+            margin: 30px 0;
+
+            background: #07111f;
+
+            opacity: .3;
+
+        }
+
+
+        .about-card strong {
+
+            display: block;
+
+            font-family: 'Kalameh-Regular', sans-serif;
+
+            font-size: 18px;
+
+            line-height: 1.8;
+
+        }
+
+
+
+        /* =========================
+   RESPONSIVE
+========================= */
+
+        @media(max-width:900px) {
+
+            .final-information {
+
+                padding: 100px 20px;
+
+            }
+
+
+            .final-information-header {
+
+                margin-bottom: 60px;
+
+            }
+
+
+            .final-information-header h2 {
+
+                font-size: 60px;
+
+            }
+
+
+            .information-layout {
+
+                grid-template-columns: 1fr;
+
+                gap: 60px;
+
+            }
+
+
+            .faq-panel {
+
+                order: 1;
+
+            }
+
+
+            .information-side {
+
+                order: 2;
+
+            }
+
+
+            .faq-item button {
+
+                font-size: 18px;
+
+                gap: 20px;
+
+            }
+
+
+            .faq-answer p {
+
+                font-size: 16px;
+
+            }
+
+
+            .price-card,
+            .about-card {
+
+                padding: 30px 25px;
+
+            }
+
+        }
+
+
+        @media(max-width:480px) {
+
+            .final-information {
+
+                padding: 80px 15px;
+
+            }
+
+
+            .final-information::before {
+
+                background-size: 50px 50px;
+
+            }
+
+
+            .final-information-header h2 {
+
+                font-size: 48px;
+
+            }
+
+
+            .final-information-header p {
+
+                font-size: 17px;
+
+            }
+
+
+            .panel-title h3 {
+
+                font-size: 27px;
+
+            }
+
+
+            .faq-item button {
+
+                padding: 22px 0;
+
+                font-size: 17px;
+
+            }
+
+
+            .faq-item button i {
+
+                width: 30px;
+
+                height: 30px;
+
+                flex-shrink: 0;
+
+            }
+
+
+            .price-card h3 {
+
+                font-size: 30px;
+
+            }
+
+
+            .about-card h3 {
+
+                font-size: 31px;
+
+            }
 
         }
 
@@ -4101,6 +4894,7 @@
     ========================= */
 
             .hero {
+                display: none;
                 height: 60vh;
                 padding: 0 24px;
                 justify-content: center;
@@ -4166,6 +4960,7 @@
             }
 
             .hero {
+                display: none;
                 min-height: 100vh;
                 padding: 0 20px;
             }
@@ -4827,7 +5622,7 @@
                 gap: 150px;
                 height: auto;
                 overflow: visible;
-                height: 1485px;
+                height: 1020px;
             }
 
 
@@ -5440,7 +6235,6 @@
                 display: none;
             }
         }
-
     </style>
 
 </head>
@@ -5517,16 +6311,16 @@
 
         <div class="menu">
 
-            <a href="#">
-                پروژه ها
-            </a>
-
-            <a href="#">
+            <a href="#why-expertise">
                 درباره ما
             </a>
 
-            <a href="#">
+            <a href="#price-card">
                 تماس با ما
+            </a>
+
+            <a href="#projects">
+                پروژه ها
             </a>
         </div>
     </nav>
@@ -5549,7 +6343,7 @@
 
 
             <h1 class="split">
-                قبل از خرید، ساختمان را بشناسید.
+                قبل از خرید، ساختمان را بشناسید
             </h1>
 
 
@@ -5612,12 +6406,12 @@
                 ظاهر یک ملک همیشه نشان‌دهنده وضعیت واقعی آن نیست.
                 ترک‌ها، رطوبت، مشکلات تأسیسات، ایرادات اجرایی، کیفیت نامناسب برخی بخش‌ها و بسیاری از موارد فنی ممکن است
                 در بازدید معمولی دیده نشوند یا اهمیت واقعی آنها مشخص نباشد.
-                یک بررسی فنی قبل از معامله می‌تواند به شما کمک کند:
-                - ایرادات ملک را پیش از خرید شناسایی کنید. <br>
-                - هزینه‌های احتمالی تعمیر و اصلاح را بهتر برآورد کنید. <br>
-                - درباره قیمت ملک تصمیم منطقی‌تری بگیرید. <br>
-                - موارد فنی را با فروشنده مطرح کنید. <br>
-                - با اطلاعات بیشتری قرارداد خود را منعقد کنید. <br>
+                یک بررسی فنی قبل از معامله می‌تواند به شما کمک کند: <br>
+                <span>- ایرادات ملک را پیش از خرید شناسایی کنید.</span> <br>
+                <span>- هزینه‌های احتمالی تعمیر و اصلاح را بهتر برآورد کنید.</span> <br>
+                <span>- درباره قیمت ملک تصمیم منطقی‌تری بگیرید.</span> <br>
+                <span>- موارد فنی را با فروشنده مطرح کنید.</span> <br>
+                <span>- با اطلاعات بیشتری قرارداد خود را منعقد کنید.</span> <br>
                 <!-- <span style="font-size: 34px;"> قبل از اینکه هزینه تعمیرات یک ملک را پرداخت کنید، هزینه کارشناسی آن را
                     پرداخت کنید. </span> -->
             </p>
@@ -5637,15 +6431,15 @@
     <section class="what-we-do" data-section="2">
 
         <h2
-            style="padding-top: 0; position: absolute; margin-top: -140px; right: 130px; font-family: 'Nazanin', sans-serif; font-size: 32px;">
+            style="padding-top: 0; position: absolute; margin-top: -140px; right: 130px; font-family: 'Kalameh-Regular', sans-serif; font-size: 32px;">
             چه خدماتی دریافت می کنید؟</h2>
-        <p style="position: absolute; margin-top: -90px; font-size: 24px; font-family: 'Badr', sans-serif;">
+        <p style="position: absolute; margin-top: -75px; font-size: 20px; font-family: 'Kalameh-Regular', sans-serif;">
             با تلفیق خلاقیت، دانش مهندسی و سال‌ها تجربه، راهکارهای جامع طراحی، اجرا و مدیریت پروژه‌های ساختمانی را ارائه
             می‌دهیم؛ از ایده اولیه تا تحویل نهایی، در کنار شما هستیم.
         </p>
 
         <div class="what-we-do-div" style="font-family: 'Lotus', sans-serif;">
-            <div class="service-menu" style="height: 100%; width: 100%; border-radius: 24px; margin-left: 10px;">
+            <div class="service-menu" style="height: 99%; width: 100%; border-radius: 24px; margin-left: 10px;">
                 <button class="service-btn active">
                     <div class="service-icon">
                         <i class="fa-solid fa-compass-drafting"></i>
@@ -5733,14 +6527,14 @@
 
             <div style="height: 100%; width: 100%; border-top-right-radius: 24px; border-bottom-right-radius: 24px;"
                 class="service-image">
-                <img src="construction.webp" alt="">
+                <img id="serviceImage" src="service1.webp" alt="">
             </div>
 
             <div class="service-info"
-                style="height: 100%; width: 100%; border-top-left-radius: 24px; border-bottom-left-radius: 24px; font-family: 'Nazanin', sans-serif;">
-                <h3 id="serviceTitle" style="font-size: 34px;">کارشناسی فنی ملک</h3>
+                style="height: 100%; width: 100%; border-top-left-radius: 24px; border-bottom-left-radius: 24px; font-family: 'Kalameh-Regular', sans-serif;">
+                <h3 id="serviceTitle" style="font-size: 28px;">کارشناسی فنی ملک</h3>
 
-                <p id="serviceDescription" style="font-size: 22px; margin-top: 23px;">
+                <p id="serviceDescription" style="font-size: 18px; margin-top: 23px;">
                     بررسی سازه‌ای در این خدمت بر اساس شرایط قابل مشاهده و امکانات و دسترسی موجود انجام می‌شود و جایگزین
                     آزمایش‌های تخصصی یا محاسبات سازه‌ای نیست.
                 </p>
@@ -6129,7 +6923,7 @@
 
                 <!-- <div class="title-line"></div> -->
 
-                <p style="font-family: 'Nazanin', sans-serif;">
+                <p style="font-family: 'Kalameh-Regular', sans-serif;">
                     هر پروژه از یک ایده آغاز می‌شود و با ترکیب دانش مهندسی،
                     هنر معماری و اجرای دقیق به واقعیت تبدیل می‌شود.
                 </p>
@@ -6140,17 +6934,24 @@
     </section>
 
 
-    <section class="special-projects light-nav" data-section="6">
+    <section class="special-projects light-nav" id="projects" data-section="6">
 
         <div class="special-project">
-            <img src="building-finished.webp" alt="">
+            <div style="display: flex; justify-content: center;">
+                <img src="projects (4).webp" alt="">
+            </div>
             <div class="special-project-info">
-                <h2>مجتمع مسکونی</h2>
+                <h2 style="margin-top: 50px;">پروژه مسکونی مهرشهر کرج</h2>
 
-                <p>
-                    این پروژه با تمرکز بر طراحی مدرن، بهره‌گیری از نور طبیعی و استفاده از متریال با کیفیت اجرا شده است.
-                    هدف اصلی، خلق فضایی لوکس، کاربردی و هماهنگ با سبک زندگی معاصر بوده که علاوه بر زیبایی بصری،
-                    استانداردهای مهندسی و پایداری را نیز به‌طور کامل رعایت می‌کند.
+                <p style="margin-top: 25px; line-height: 1.6;">
+                    <span style="font-weight: bold;">آرماتوربندی پروژه مسکونی مهرشهر کرج</span><br>
+                    در این مرحله، عملیات آرماتوربندی بخش‌های مختلف سازه با دقت اجرا و کنترل می‌شود. جانمایی میلگردها،
+                    فواصل آرماتورها و جزئیات اتصال بر اساس نقشه‌های اجرایی بررسی شده تا سازه از نظر کیفیت اجرا و انطباق
+                    با الزامات فنی در شرایط مطلوب قرار داشته باشد. <br>
+
+                    پروژه در مراحل پایانی اجرا قرار دارد و جزئیات نهایی ساختمان در حال تکمیل و کنترل است. در این مرحله،
+                    کیفیت اجرای بخش‌های مختلف، هماهنگی اجزای ساختمان و رفع نواقص باقی‌مانده بررسی می‌شود تا پروژه با
+                    کیفیت مناسب و مطابق مشخصات فنی آماده بهره‌برداری شود.
                 </p>
                 <div class="project-details">
                     <div class="detail-row">
@@ -6160,18 +6961,18 @@
 
                     <div class="detail-row">
                         <span class="detail-title">موقعیت</span>
-                        <span class="detail-value">آدرس پروژه</span>
+                        <span class="detail-value">مهرشهر کرج</span>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="special-project">
+        <!-- <div class="special-project">
             <img src="building-finished.webp" alt="">
             <div class="special-project-info">
                 <h2>مجتمع مسکونی</h2>
 
-                <p>
+                <p style="margin-top: 25px;">
                     این پروژه با تمرکز بر طراحی مدرن، بهره‌گیری از نور طبیعی و استفاده از متریال با کیفیت اجرا شده است.
                     هدف اصلی، خلق فضایی لوکس، کاربردی و هماهنگ با سبک زندگی معاصر بوده که علاوه بر زیبایی بصری،
                     استانداردهای مهندسی و پایداری را نیز به‌طور کامل رعایت می‌کند.
@@ -6188,7 +6989,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
     </section>
@@ -6526,7 +7327,7 @@
 
     <!-- WHY US -->
 
-    <section class="why-expertise light-nav" data-section="9">
+    <section class="why-expertise light-nav" id="why-expertise" data-section="9">
 
         <div class="why-intro">
 
@@ -6708,13 +7509,247 @@
     </section>
 
 
+    <!-- FAQ / PRICING / ABOUT -->
 
+    <section class="final-information" data-section="10">
+
+        <div class="final-information-header">
+
+            <span>INFORMATION</span>
+
+            <h2>
+                قبل از تصمیم،
+                <strong>بدانید.</strong>
+            </h2>
+
+            <p>
+                پاسخ پرسش‌های متداول، اطلاعات هزینه کارشناسی
+                و آشنایی بیشتر با رویکرد ما.
+            </p>
+
+        </div>
+
+
+        <div class="information-layout">
+
+
+            <!-- FAQ -->
+
+            <div class="faq-panel">
+
+                <div class="panel-title">
+                    <span>01</span>
+                    <h3>سوالات متداول</h3>
+                </div>
+
+
+                <div class="faq-list">
+
+                    <div class="faq-item">
+
+                        <button>
+                            <span>کارشناسی چقدر زمان می‌برد؟</span>
+                            <i>+</i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                مدت زمان بازدید به متراژ، نوع ملک، تعداد بخش‌های
+                                قابل بررسی و شرایط ساختمان بستگی دارد.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <button>
+                            <span>آیا کارشناسی شامل قیمت‌گذاری ملک هم می‌شود؟</span>
+                            <i>+</i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                کارشناسی فنی با کارشناسی قیمت و ارزیابی ارزش ملک
+                                متفاوت است. تمرکز این خدمت بر وضعیت فنی و اجرایی
+                                ساختمان است.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <button>
+                            <span>آیا می‌توان قبل از خرید آپارتمان کارشناسی انجام داد؟</span>
+                            <i>+</i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                بله. توصیه می‌شود کارشناسی فنی پیش از نهایی شدن
+                                معامله انجام شود.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <button>
+                            <span>آیا ملک نوساز هم نیاز به کارشناسی دارد؟</span>
+                            <i>+</i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                بله. نوساز بودن ساختمان به معنی نبود ایراد فنی
+                                یا اجرایی نیست.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <button>
+                            <span>آیا مالک می‌تواند درخواست کارشناسی بدهد؟</span>
+                            <i>+</i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                بله. مالک می‌تواند پیش از فروش ملک، وضعیت فنی
+                                ساختمان را بررسی کند و ایرادات احتمالی را شناسایی کند.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <button>
+                            <span>آیا کارشناسی سلامت کامل ساختمان را تضمین می‌کند؟</span>
+                            <i>+</i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                خیر. هیچ بازدیدی نمی‌تواند سلامت مطلق و آینده یک
+                                ساختمان را تضمین کند. کارشناسی بر اساس شرایط موجود،
+                                محدوده خدمات، دسترسی‌ها و موارد قابل مشاهده و بررسی
+                                در زمان بازدید انجام می‌شود.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SIDE INFORMATION -->
+
+            <div class="information-side">
+
+
+                <!-- PRICE -->
+
+                <div class="price-card" id="price-card">
+
+                    <span class="card-number">02</span>
+
+                    <span class="card-label">
+                        تعرفه کارشناسی
+                    </span>
+
+                    <h3>
+                        هزینه کارشناسی ملک
+                    </h3>
+
+                    <p>
+                        هزینه کارشناسی با توجه به نوع ملک، متراژ،
+                        موقعیت، تعداد بخش‌های مورد بررسی، سطح کارشناسی
+                        و نوع گزارش تعیین می‌شود.
+                    </p>
+
+                    <div class="price-items">
+
+                        <span>نوع ملک</span>
+                        <span>متراژ</span>
+                        <span>موقعیت</span>
+                        <span>سطح کارشناسی</span>
+
+                    </div>
+
+                    <a href="#" class="price-button">
+
+                        <span>
+                            دریافت قیمت کارشناسی
+                        </span>
+
+                        <b>↗</b>
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- ABOUT -->
+
+                <div class="about-card">
+
+                    <span class="card-number">03</span>
+
+                    <span class="card-label">
+                        درباره ما
+                    </span>
+
+                    <h3>
+                        ساختمان را
+                        فقط از روی ظاهر
+                        آن بررسی نمی‌کنیم.
+                    </h3>
+
+                    <p>
+                        کارشناسی فنی ملک نیازمند شناخت ساختمان،
+                        فرآیند ساخت، جزئیات اجرا و ایرادات احتمالی آن است.
+                    </p>
+
+                    <p>
+                        تجربه اجرایی در پروژه‌های ساختمانی به ما کمک می‌کند
+                        هنگام بازدید، علاوه بر ظاهر ملک، به جزئیاتی توجه کنیم
+                        که ممکن است برای خریدار عادی قابل تشخیص نباشند.
+                    </p>
+
+                    <div class="about-line"></div>
+
+                    <strong>
+                        دانستن قبل از خرید،
+                        همیشه کم‌هزینه‌تر از اصلاح بعد از خرید است.
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
 
 
     <!-- FINAL -->
 
 
-    <section class="contact" data-section="10">
+    <!-- <section class="contact" data-section="10">
 
         <h2 class="split" style="font-family: 'Badr', sans-serif;">
 
@@ -6722,13 +7757,13 @@
 
         </h2>
 
-        <button class="magnetic" style="font-family: 'Nazanin', sans-serif; font-size: 18px">
+        <button class="magnetic" style="font-family: 'Kalameh-Regular', sans-serif; font-size: 18px">
 
             شروع همکاری
 
         </button>
 
-    </section>
+    </section> -->
 
 
 
@@ -8193,7 +9228,7 @@
                         "بررسی ظاهری اجزای سازه‌ای، ترک‌ها، نشست‌های قابل مشاهده، تغییر شکل‌ها و سایر نشانه‌های احتمالی مشکلات سازه‌ای.",
                     ],
 
-                    image: "construction.webp"
+                    image: "service1.webp"
                 },
 
 
@@ -8207,7 +9242,7 @@
                         "بررسی کیفیت اجرای دیوار ها، کف‌ ها، سقف‌ ها، نما، در و پنجره، قرنیز ها و سایر اجزای معماری قابل دسترسی.",
                     ],
 
-                    image: "construction.webp"
+                    image: "service2.webp"
                 },
 
                 {
@@ -8220,7 +9255,7 @@
                         "بررسی وضعیت قابل مشاهده سیستم‌های آب، فاضلاب، گرمایش، سرمایش و سایر تجهیزات مکانیکی ساختمان.",
                     ],
 
-                    image: "construction.webp"
+                    image: "service3.webp"
                 },
 
                 {
@@ -8233,7 +9268,7 @@
                         "بررسی ظاهری تابلو برق، کلیدها، پریزها، سیم‌کشی‌های قابل دسترس و سایر اجزای قابل بررسی تأسیسات برقی.",
                     ],
 
-                    image: "construction.webp"
+                    image: "service4.webp"
                 },
 
                 {
@@ -8306,6 +9341,30 @@
             });
 
         });
+    </script>
+
+    <script>
+
+        document.querySelectorAll(".faq-item button").forEach(button => {
+
+            button.addEventListener("click", () => {
+
+                const item = button.parentElement;
+
+                document.querySelectorAll(".faq-item").forEach(other => {
+
+                    if (other !== item) {
+                        other.classList.remove("open");
+                    }
+
+                });
+
+                item.classList.toggle("open");
+
+            });
+
+        });
+
     </script>
 
 
