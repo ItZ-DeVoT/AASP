@@ -159,36 +159,23 @@
             opacity: 0;
             top: 20px;
             left: 50%;
-
             transform: translateX(-50%);
-
             width: calc(100% - 40px);
             /* max-width: 1600px; */
-
             padding: 8px 40px;
-
             display: flex;
             justify-content: space-between;
             align-items: center;
-
             z-index: 100;
-
-
             background: rgb(255 255 255 / 25%);
-
             backdrop-filter: blur(9px) saturate(180%);
             -webkit-backdrop-filter: blur(24px) saturate(180%);
-
-
             border: 1px solid rgba(255, 255, 255, .12);
-
-
+            border-radius: 16px;
             box-shadow:
                 0 8px 32px rgba(0, 0, 0, .18),
                 inset 0 1px 1px rgba(255, 255, 255, .15),
                 inset 0 -1px 1px rgba(255, 255, 255, .05);
-
-
             transition:
                 top .45s ease,
                 padding .45s ease,
@@ -5300,15 +5287,11 @@
                 font-size: 18px;
 
             }
-
-
+            
 
             .service-text h3 {
-
-                font-size: 20px;
-
+                font-size: 16px;
             }
-
 
 
             .service-arrow {
@@ -5316,8 +5299,6 @@
                 font-size: 18px;
 
             }
-
-
 
             .service-image {
 
@@ -5330,8 +5311,6 @@
                 border-radius: 20px !important;
 
             }
-
-
 
             .service-image img {
 
@@ -6315,7 +6294,7 @@
                 درباره ما
             </a>
 
-            <a href="#price-card" class="smooth-scroll">
+            <a href=".final-information" class="smooth-scroll">
                 تماس با ما
             </a>
 
@@ -7691,7 +7670,7 @@
 
                     </div>
 
-                    <a href="#" class="price-button">
+                    <a href="tel:+989127065329" class="price-button">
 
                         <span>
                             دریافت قیمت کارشناسی
@@ -8303,8 +8282,6 @@
         gsap.registerPlugin(ScrollTrigger);
 
 
-
-
         // -----------------------------
         // LENIS SMOOTH SCROLL
         // -----------------------------
@@ -8319,7 +8296,6 @@
         });
 
 
-
         function raf(time) {
 
             lenis.raf(time);
@@ -8332,15 +8308,7 @@
         requestAnimationFrame(raf);
 
 
-
-
-
         lenis.on("scroll", ScrollTrigger.update);
-
-
-
-
-
 
 
         // -----------------------------
@@ -8359,8 +8327,6 @@
                 types: "words"
 
             });
-
-
 
             gsap.from(split.chars, {
 
@@ -8392,8 +8358,6 @@
 
         });
 
-
-
         // -----------------------------
         // HERO PARALLAX
         // -----------------------------
@@ -8408,8 +8372,6 @@
                 scrub: true
             }
         });
-
-
 
 
         // -----------------------------
@@ -8458,9 +8420,6 @@
 
         initProjectsScroll();
 
-
-
-
         // -----------------------------
         // IMAGE REVEAL
         // -----------------------------
@@ -8491,13 +8450,6 @@
 
 
         });
-
-
-
-
-
-
-
 
 
         // -----------------------------
@@ -9281,7 +9233,7 @@
                         "بررسی نشانه‌های ظاهری رطوبت، نم، آب‌دادگی و آسیب‌های ناشی از آن در بخش‌های قابل دسترس ساختمان.",
                     ],
 
-                    image: "construction.webp"
+                    image: "service5.webp"
                 },
 
                 {
@@ -9294,7 +9246,7 @@
                         "بررسی قسمت‌هایی مانند پارکینگ، راه‌پله، پشت‌بام، نما، آسانسور و سایر قسمت‌های قابل دسترسی ساختمان.",
                     ],
 
-                    image: "construction.webp"
+                    image: "service6.webp"
                 },
 
             ];
