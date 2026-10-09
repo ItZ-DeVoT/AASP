@@ -108,7 +108,7 @@
         }
 
 
-        .brand-banner.loaded h1 {
+        .brand-banner.loaded p {
 
             animation: txBlur 4s ease forwards;
 
@@ -393,9 +393,10 @@
         }
 
         .hero-content {
+            text-align: center;
             position: relative;
             z-index: 2;
-            margin-top: 145px;
+            /* margin-top: 145px; */
         }
 
         .hero-tags {
@@ -433,8 +434,15 @@
         }
 
         .hero h1 {
-            font-family: 'Sandbad_Bold', sans-serif;
-            font-size: 110px;
+            font-family: 'Nazanin', sans-serif;
+            font-size: 88px;
+            line-height: 1.0;
+            font-weight: 900;
+        }
+
+        .hero h2 {
+            font-family: 'Nazanin', sans-serif;
+            font-size: 64px;
             line-height: 1.0;
             font-weight: 900;
         }
@@ -2218,6 +2226,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             overflow: hidden;
             position: relative;
             background: #050505;
@@ -2258,7 +2267,7 @@
         }
 
 
-        .brand-banner h1 {
+        .brand-banner p {
             position: relative;
             z-index: 2;
             cursor: default;
@@ -4569,7 +4578,7 @@
                 /* background-size : 130%; */
             }
 
-            .brand-banner h1 {
+            .brand-banner p {
                 font-size: clamp(90px, 28vw, 180px);
                 letter-spacing: -3px;
                 background-size: 440%;
@@ -4588,7 +4597,7 @@
                 margin-top: 90px;
             }
 
-            .hero h1 {
+            .hero h2 {
                 font-size: 62px;
                 line-height: 1.15;
             }
@@ -4631,7 +4640,7 @@
                 height: 100vh;
             }
 
-            .brand-banner h1 {
+            .brand-banner p {
                 font-size: clamp(70px, 26vw, 130px);
                 letter-spacing: -2px;
             }
@@ -4646,7 +4655,7 @@
                 margin-top: 70px;
             }
 
-            .hero h1 {
+            .hero h2 {
                 font-size: 48px;
             }
 
@@ -4679,7 +4688,7 @@
                 height: 100vh;
             }
 
-            .brand-banner h1 {
+            .brand-banner p {
                 font-size: 120px
             }
 
@@ -4687,7 +4696,7 @@
                 padding: 0 18px;
             }
 
-            .hero h1 {
+            .hero h2 {
                 font-size: 94px;
             }
 
@@ -4972,7 +4981,7 @@
                 font-size: 18px;
 
             }
-            
+
 
             .service-text h3 {
                 font-size: 16px;
@@ -5986,7 +5995,7 @@
     </nav>
 
     <section class="brand-banner">
-        <h1>AASP</h1>
+        <p>AASP</p>
     </section>
 
     <!-- HERO -->
@@ -6001,10 +6010,12 @@
 
         <div class="hero-content">
 
-
             <h1 class="split">
-                قبل از خرید، ساختمان را بشناسید
+               شرکت ساختمانی AASP
             </h1>
+            <h2 class="split" style="padding-top: 40px;">
+                کارشناسی تخصصی ملک قبل از خرید
+            </h2>
 
 
 
