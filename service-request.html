@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>درخواست خدمات</title>
+
+    <link rel="stylesheet" href="style.css?v=0.0.1">
+    <link rel="stylesheet" href="responsive.css?v=0.0.1">
+    <link rel="icon" type="image/webp" href="logo.webp">
+</head>
+
+<body class="service-page-body">
+
+    <main class="service-page">
+
+        <!-- Background Effects -->
+        <!-- <div class="background-glow glow-one"></div>
+        <div class="background-glow glow-two"></div> -->
+        <div class="background-grid"></div>
+
+        <!-- Navigation -->
+        <header class="service-nav">
+            <a href="index.html" class="back-link">
+                <span>→</span>
+                بازگشت به صفحه اصلی
+            </a>
+
+            <a href="index.html" class="brand">
+                <img src="logo.webp" alt="Logo">
+            </a>
+        </header>
+
+        <!-- Form Section -->
+        <section class="request-section">
+
+            <div class="request-header">
+                <!-- <span class="request-label">
+                    SERVICE REQUEST — 01
+                </span> -->
+
+                <h1>
+                    درخواست <strong>خدمات</strong>
+                </h1>
+
+                <p>
+                    برای شروع همکاری، لطفاً اطلاعات زیر را تکمیل کنید.
+                    پس از بررسی درخواست، با شما تماس خواهیم گرفت.
+                </p>
+            </div>
+
+            <div class="request-container">
+
+                <form id="serviceRequestForm" action="https://formsubmit.co/arshia.dev03@gmail.com" method="POST">
+
+                    <input type="hidden" name="_subject" value="درخواست جدید خدمات">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="true">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_next" value="https://YOUR-DOMAIN.com/email-sent.html">
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label for="full_name">نام و نام خانوادگی</label>
+
+                            <input type="text" id="full_name" name="full_name" placeholder="نام کامل خود را وارد کنید"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">آدرس ایمیل (اختیاری)</label>
+
+                            <input type="email" id="email" name="email" placeholder="example@email.com" dir="ltr">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">شماره تماس</label>
+
+                            <input type="tel" id="phone" name="phone" placeholder="شماره تماس خود را وارد کنید"
+                                dir="ltr" inputmode="numeric" pattern="[0-9]+"
+                                oninput="this.value = this.value.replace(/[^0-9]/g, '')" maxlength="11" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">نوع خدمات</label>
+
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>انتخاب خدمات</option>
+
+                                <option value="کارشناسی فنی ملک">
+                                    کارشناسی فنی ملک
+                                </option>
+
+                                <option value="بررسی معماری و کیفیت اجرا">
+                                    بررسی معماری و کیفیت اجرا
+                                </option>
+
+                                <option value="بررسی تأسیسات مکانیکی">
+                                    بررسی تأسیسات مکانیکی
+                                </option>
+
+                                <option value="بررسی تأسیسات برقی">
+                                    بررسی تأسیسات برقی
+                                </option>
+
+                                <option value="سایر خدمات">
+                                    سایر خدمات
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="subject">عنوان درخواست</label>
+
+                            <input type="text" id="subject" name="subject" placeholder="موضوع درخواست خود را بنویسید"
+                                required>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="message">توضیحات درخواست</label>
+
+                            <textarea id="message" name="message" rows="6"
+                                placeholder="جزئیات درخواست خود را شرح دهید..." required></textarea>
+                        </div>
+
+                    </div>
+
+                    <div class="form-footer">
+
+                        <span>
+                            اطلاعات شما صرفاً برای بررسی درخواست استفاده می‌شود.
+                        </span>
+
+                        <button type="submit">
+                            <span>ارسال درخواست</span>
+                            <b>←</b>
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+            <!-- <footer class="service-footer">
+                <span>© All Rights Reserved</span>
+            </footer> -->
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
